@@ -129,6 +129,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 #mobileMenu a:hover{color:var(--t-brand)}
 .hdot{transition:.35s}
 </style>
+<script src="js/site-data.js"></script>
 </head>
 <body class="antialiased">
 
@@ -146,12 +147,12 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <div class="text-[13px] py-2.5 px-4 relative overflow-hidden" style="background:linear-gradient(135deg,#0E0C0A,#221D14 50%,#0E0C0A);color:#F5E6B8;border-bottom:1px solid rgba(201,168,106,.35)">
   <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 relative">
     <div class="flex items-center gap-5">
-      <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot" style="color:#D4AF37"></i><span data-ar="طرابلس، ليبيا — نخدم كل المناطق" data-en="Tripoli, Libya — All districts covered">طرابلس، ليبيا — نخدم كل المناطق</span></span>
-      <span class="hidden md:flex items-center gap-1.5 opacity-80"><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م" data-en="Sat - Thu: 9AM - 7PM | Fri: 4PM - 7PM">السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م</span></span>
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot" style="color:#D4AF37"></i><span data-admin="settings.location" data-ar="طرابلس، ليبيا — نخدم كل المناطق" data-en="Tripoli, Libya — All districts covered">طرابلس، ليبيا — نخدم كل المناطق</span></span>
+      <span class="hidden md:flex items-center gap-1.5 opacity-80"><i class="fa-regular fa-clock"></i><span data-admin="settings.hours" data-ar="السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م" data-en="Sat - Thu: 9AM - 7PM | Fri: 4PM - 7PM">السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م</span></span>
     </div>
     <div class="flex items-center gap-3">
-      <a href="tel:+218912345678" class="flex items-center gap-1.5 hover:opacity-80 font-bold" dir="ltr"><i class="fa-solid fa-phone" style="color:#D4AF37"></i> 091-234 5678</a>
-      <span class="badge-gold px-3 py-1 rounded-full font-black text-[12px] shadow" data-ar="✦ معاينة ملكية مجانية داخل طرابلس" data-en="✦ FREE royal visit inside Tripoli">✦ معاينة ملكية مجانية داخل طرابلس</span>
+      <a href="tel:+218912345678" class="flex items-center gap-1.5 hover:opacity-80 font-bold" dir="ltr"><i class="fa-solid fa-phone" style="color:#D4AF37"></i> <span data-admin-text="settings.phone">091-234 5678</span></a>
+      <span class="badge-gold px-3 py-1 rounded-full font-black text-[12px] shadow" data-admin="settings.topbarOffer" data-ar="✦ معاينة ملكية مجانية داخل طرابلس" data-en="✦ FREE royal visit inside Tripoli">✦ معاينة ملكية مجانية داخل طرابلس</span>
     </div>
   </div>
 </div>
@@ -162,8 +163,8 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
     <a href="#home" class="flex items-center gap-3">
       <div class="w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-white text-2xl shadow-gold relative overflow-hidden" style="background:linear-gradient(135deg,#7A5F2E,#C9A86A 45%,#F5E6B8 55%,#B8964E)"><i class="fa-solid fa-umbrella" style="color:#1A1408"></i></div>
       <div class="leading-tight">
-        <div class="font-black text-[19px] lux-head" data-ar="مظلات طرابلس الملكية" data-en="Tripoli Royal Shades">مظلات طرابلس الملكية</div>
-        <div class="text-[12px] font-bold tracking-wide" style="color:var(--t-muted)" data-ar="حدائق • فلل • سيارات | فخامة بسيطة بسعر اقتصادي" data-en="Gardens • Villas • Cars | Simple luxury, budget price">حدائق • فلل • سيارات | فخامة بسيطة بسعر اقتصادي</div>
+        <div class="font-black text-[19px] lux-head" data-admin="settings.siteName" data-ar="مظلات طرابلس الملكية" data-en="Tripoli Royal Shades">مظلات طرابلس الملكية</div>
+        <div class="text-[12px] font-bold tracking-wide" style="color:var(--t-muted)" data-admin="settings.tagline" data-ar="حدائق • فلل • سيارات | فخامة بسيطة بسعر اقتصادي" data-en="Gardens • Villas • Cars | Simple luxury, budget price">حدائق • فلل • سيارات | فخامة بسيطة بسعر اقتصادي</div>
       </div>
     </a>
     <nav class="hidden lg:flex items-center gap-7 font-bold text-[15px]">
@@ -209,7 +210,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 
 <!-- HERO -->
 <section id="home" class="relative overflow-hidden min-h-[92vh] flex items-center" style="background:#0E0C0A">
-  <div class="absolute inset-0">
+  <div class="absolute inset-0" id="heroSlides">
     <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop')"></div>
     <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop')"></div>
     <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop')"></div>
@@ -221,24 +222,24 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
     <div class="reveal visible">
       <div class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-bold shadow mb-5 glass text-white">
         <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span><i class="fa-solid fa-crown text-sm" style="color:#D4AF37"></i>
-        <span data-ar="متاحون الآن في طرابلس — تركيب خلال 48 ساعة بلمسة ملكية" data-en="Available now in Tripoli — Install within 48h with royal touch">متاحون الآن في طرابلس — تركيب خلال 48 ساعة بلمسة ملكية</span>
+        <span data-admin="hero.badge" data-ar="متاحون الآن في طرابلس — تركيب خلال 48 ساعة بلمسة ملكية" data-en="Available now in Tripoli — Install within 48h with royal touch">متاحون الآن في طرابلس — تركيب خلال 48 ساعة بلمسة ملكية</span>
       </div>
       <div class="flex items-center gap-3 mb-3">
         <div class="h-[2px] w-12" style="background:linear-gradient(to left,#D4AF37,transparent)"></div>
         <span class="text-[13px] font-black tracking-[3px]" style="color:#D4AF37">TRIPOLI • LIBYA • SINCE 2013</span>
       </div>
       <h1 class="text-4xl md:text-5xl lg:text-[58px] font-black leading-[1.15] mb-4 text-white">
-        <span data-ar="مظلات حدائق وفلل " data-en="Garden & Villa Shades ">مظلات حدائق وفلل </span>
-        <span class="gold-text" style="background-image:linear-gradient(135deg,#F5E6B8,#D4AF37 40%,#FFF3C4 60%,#B8964E);-webkit-background-clip:text;background-clip:text" data-ar="بفخامة بسيطة" data-en="with Simple Luxury">بفخامة بسيطة</span><br>
-        <span class="text-xl md:text-2xl lg:text-[25px] font-extrabold" style="color:#E9D9B8" data-ar="نوع بسيط ومتوسط فقط — بدون تكاليف الزجاج المبالغ فيها" data-en="Simple & mid-range only — No overpriced glass costs">نوع بسيط ومتوسط فقط — بدون تكاليف الزجاج المبالغ فيها</span>
+        <span data-admin="hero.title1" data-ar="مظلات حدائق وفلل " data-en="Garden & Villa Shades ">مظلات حدائق وفلل </span>
+        <span class="gold-text" style="background-image:linear-gradient(135deg,#F5E6B8,#D4AF37 40%,#FFF3C4 60%,#B8964E);-webkit-background-clip:text;background-clip:text" data-admin="hero.titleGold" data-ar="بفخامة بسيطة" data-en="with Simple Luxury">بفخامة بسيطة</span><br>
+        <span class="text-xl md:text-2xl lg:text-[25px] font-extrabold" style="color:#E9D9B8" data-admin="hero.subtitle" data-ar="نوع بسيط ومتوسط فقط — بدون تكاليف الزجاج المبالغ فيها" data-en="Simple & mid-range only — No overpriced glass costs">نوع بسيط ومتوسط فقط — بدون تكاليف الزجاج المبالغ فيها</span>
       </h1>
-      <p class="text-[16px] md:text-lg leading-relaxed mb-6 max-w-xl font-semibold text-white/80" data-ar="نركّب مظلات قماش شراعية، حديد مع قماش PVC كوري، وبرجولات خشبية أنيقة للجلسات الخارجية ومواقف السيارات. خامات تتحمّل شمس طرابلس ورطوبتها، تشطيب فاخر وضمان حقيقي — وكل شغلنا عملي واقتصادي." data-en="Sail fabric, iron + Korean PVC & elegant wooden pergolas for patios & car parking. Built for Tripoli sun & humidity, luxury finish & real warranty — all practical & budget.">نركّب مظلات قماش شراعية، حديد مع قماش PVC كوري، وبرجولات خشبية أنيقة للجلسات الخارجية ومواقف السيارات. خامات تتحمّل شمس طرابلس ورطوبتها، تشطيب فاخر وضمان حقيقي — وكل شغلنا عملي واقتصادي.</p>
+      <p class="text-[16px] md:text-lg leading-relaxed mb-6 max-w-xl font-semibold text-white/80" data-admin="hero.description" data-ar="نركّب مظلات قماش شراعية، حديد مع قماش PVC كوري، وبرجولات خشبية أنيقة للجلسات الخارجية ومواقف السيارات. خامات تتحمّل شمس طرابلس ورطوبتها، تشطيب فاخر وضمان حقيقي — وكل شغلنا عملي واقتصادي." data-en="Sail fabric, iron + Korean PVC & elegant wooden pergolas for patios & car parking. Built for Tripoli sun & humidity, luxury finish & real warranty — all practical & budget.">نركّب مظلات قماش شراعية، حديد مع قماش PVC كوري، وبرجولات خشبية أنيقة للجلسات الخارجية ومواقف السيارات. خامات تتحمّل شمس طرابلس ورطوبتها، تشطيب فاخر وضمان حقيقي — وكل شغلنا عملي واقتصادي.</p>
       <div class="flex flex-wrap gap-3 mb-8">
         <a href="#calc" class="btn-gold px-7 py-3.5 rounded-2xl font-black transition flex items-center gap-2"><i class="fa-solid fa-calculator"></i><span data-ar="احسب تكلفتك فوراً" data-en="Calculate your cost">احسب تكلفتك فوراً</span></a>
         <a href="https://wa.me/218912345678?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9%20%D9%84%D9%85%D8%B8%D9%84%D8%A9" target="_blank" class="bg-[#25D366] text-white px-7 py-3.5 rounded-2xl font-black hover:brightness-95 transition shadow-soft flex items-center gap-2"><i class="fa-brands fa-whatsapp text-xl"></i><span data-ar="واتساب مباشر" data-en="Direct WhatsApp">واتساب مباشر</span></a>
         <a href="#gallery" class="btn-outline-gold px-6 py-3.5 rounded-2xl font-black flex items-center gap-2"><i class="fa-solid fa-images"></i><span data-ar="شاهد أعمالنا" data-en="View our work">شاهد أعمالنا</span></a>
       </div>
-      <div class="grid grid-cols-3 gap-3 max-w-lg">
+      <div class="grid grid-cols-3 gap-3 max-w-lg" id="heroStats">
         <div class="glass rounded-2xl p-3 text-center"><div class="font-black text-xl text-white"><span class="counter" data-target="850">0</span>+</div><div class="text-[12px] font-bold text-white/70" data-ar="مظلة تم تركيبها" data-en="Shades installed">مظلة تم تركيبها</div></div>
         <div class="glass rounded-2xl p-3 text-center"><div class="font-black text-xl text-white"><span class="counter" data-target="12">0</span></div><div class="text-[12px] font-bold text-white/70" data-ar="سنة خبرة في طرابلس" data-en="Years in Tripoli">سنة خبرة في طرابلس</div></div>
         <div class="glass rounded-2xl p-3 text-center"><div class="font-black text-xl text-white">4.8 <i class="fa-solid fa-star text-sm" style="color:#D4AF37"></i></div><div class="text-[12px] font-bold text-white/70" data-ar="تقييم العملاء" data-en="Customer rating">تقييم العملاء</div></div>
@@ -251,28 +252,28 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
       <div class="lux-frame shadow-lux">
         <div class="lux-frame-inner">
           <div class="img-zoom relative">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop'" alt="فيلا بحديقة خاصة في طرابلس - موقع تركيب مظلة جلسة خارجية" class="w-full h-[430px] lg:h-[540px] object-cover">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" data-admin-img="hero.sideImage" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop'" alt="فيلا بحديقة خاصة في طرابلس - موقع تركيب مظلة جلسة خارجية" class="w-full h-[430px] lg:h-[540px] object-cover">
             <span class="photo-tag"><i class="fa-solid fa-circle-check text-green-400"></i><span data-ar="صورة مطابقة: فيلا بحديقة حقيقية" data-en="Matching photo: real villa garden">صورة مطابقة: فيلا بحديقة حقيقية</span></span>
           </div>
           <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-5 pt-16 text-white">
-            <div class="font-bold text-[13px] bg-white/15 backdrop-blur inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-2 border border-white/20"><i class="fa-solid fa-crown" style="color:#D4AF37"></i><span data-ar="فيلا مع حديقة — المكان المثالي للمظلة الأنيقة" data-en="Villa with garden — ideal for elegant shade">فيلا مع حديقة — المكان المثالي للمظلة الأنيقة</span></div>
-            <div class="font-black text-lg" data-ar="مظلة قماش لجلسة خارجية + موقف سيارة" data-en="Fabric shade for patio + car park">مظلة قماش لجلسة خارجية + موقف سيارة</div>
+            <div class="font-bold text-[13px] bg-white/15 backdrop-blur inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-2 border border-white/20"><i class="fa-solid fa-crown" style="color:#D4AF37"></i><span data-admin="hero.sideCaption" data-ar="فيلا مع حديقة — المكان المثالي للمظلة الأنيقة" data-en="Villa with garden — ideal for elegant shade">فيلا مع حديقة — المكان المثالي للمظلة الأنيقة</span></div>
+            <div class="font-black text-lg" data-admin="hero.sideTitle" data-ar="مظلة قماش لجلسة خارجية + موقف سيارة" data-en="Fabric shade for patio + car park">مظلة قماش لجلسة خارجية + موقف سيارة</div>
             <div class="flex items-center gap-2 mt-2 text-[12px] font-bold text-white/80">
               <span class="flex text-amber-400 gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-              <span data-ar="تشطيب ملكي — حديد مجلفن + قماش UV" data-en="Royal finish — galvanized + UV fabric">تشطيب ملكي — حديد مجلفن + قماش UV</span>
+              <span data-admin="hero.sideFinish" data-ar="تشطيب ملكي — حديد مجلفن + قماش UV" data-en="Royal finish — galvanized + UV fabric">تشطيب ملكي — حديد مجلفن + قماش UV</span>
             </div>
           </div>
         </div>
       </div>
       <div class="absolute -top-4 -right-3 md:-right-5 rounded-2xl shadow-lux px-4 py-3 flex items-center gap-3 float-anim border z-10" style="background:rgba(20,17,14,.92);border-color:rgba(212,175,55,.45);backdrop-filter:blur(10px)">
         <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl" style="background:linear-gradient(135deg,#D4AF37,#F5E6B8);color:#1A1408"><i class="fa-solid fa-shield-halved"></i></div>
-        <div><div class="font-black text-sm text-white" data-ar="ضمان سنتين مختوم" data-en="2-Year Stamped Warranty">ضمان سنتين مختوم</div><div class="text-xs font-semibold text-white/60" data-ar="على الحديد والقماش" data-en="On frame & fabric">على الحديد والقماش</div></div>
+        <div><div class="font-black text-sm text-white" data-admin="hero.warrantyTitle" data-ar="ضمان سنتين مختوم" data-en="2-Year Stamped Warranty">ضمان سنتين مختوم</div><div class="text-xs font-semibold text-white/60" data-admin="hero.warrantySub" data-ar="على الحديد والقماش" data-en="On frame & fabric">على الحديد والقماش</div></div>
       </div>
       <div class="absolute -bottom-5 -left-2 md:-left-5 rounded-2xl shadow-lux px-5 py-3 flex items-center gap-3 float-anim z-10" style="background:rgba(20,17,14,.92);border:1px solid rgba(212,175,55,.45);backdrop-filter:blur(10px);animation-delay:1s">
         <div class="text-3xl">🇱🇾</div>
-        <div><div class="font-black text-sm text-white" data-ar="صناعة محلية — فنيون ليبيون" data-en="Local made — Libyan team">صناعة محلية — فنيون ليبيون</div><div class="text-xs text-white/60 font-semibold" data-ar="نصلك لباب الحوش في طرابلس" data-en="We come to your home in Tripoli">نصلك لباب الحوش في طرابلس</div></div>
+        <div><div class="font-black text-sm text-white" data-admin="hero.localTitle" data-ar="صناعة محلية — فنيون ليبيون" data-en="Local made — Libyan team">صناعة محلية — فنيون ليبيون</div><div class="text-xs text-white/60 font-semibold" data-admin="hero.localSub" data-ar="نصلك لباب الحوش في طرابلس" data-en="We come to your home in Tripoli">نصلك لباب الحوش في طرابلس</div></div>
       </div>
-      <div class="absolute top-1/2 -left-4 md:-left-8 rounded-2xl shadow-lux px-4 py-2.5 hidden md:flex items-center gap-2 z-10" style="background:linear-gradient(135deg,#B8964E,#E9D9B8);color:#1A1408;transform:rotate(-3deg)"><i class="fa-solid fa-screwdriver-wrench"></i><span class="font-black text-sm" data-ar="تركيب في يوم واحد" data-en="1-day installation">تركيب في يوم واحد</span></div>
+      <div class="absolute top-1/2 -left-4 md:-left-8 rounded-2xl shadow-lux px-4 py-2.5 hidden md:flex items-center gap-2 z-10" style="background:linear-gradient(135deg,#B8964E,#E9D9B8);color:#1A1408;transform:rotate(-3deg)"><i class="fa-solid fa-screwdriver-wrench"></i><span class="font-black text-sm" data-admin="hero.installBadge" data-ar="تركيب في يوم واحد" data-en="1-day installation">تركيب في يوم واحد</span></div>
     </div>
   </div>
   <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1 text-white/50 z-10">
@@ -288,7 +289,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 
 <!-- FEATURES STRIP -->
 <section class="max-w-7xl mx-auto px-4 py-10">
-  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="featuresGrid">
     <div class="reveal lux-card card-shine p-5 flex items-center gap-3">
       <div class="w-12 h-12 rounded-2xl flex items-center justify-center text-lg shrink-0" style="background:linear-gradient(135deg,var(--t-brand-deep),var(--t-brand));color:#fff"><i class="fa-solid fa-ruler-combined"></i></div>
       <div class="font-bold text-[14px]" data-ar="معاينة وقياس مجاني داخل طرابلس" data-en="Free visit & measurement in Tripoli">معاينة وقياس مجاني داخل طرابلس</div>
@@ -312,11 +313,11 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <section id="services" class="max-w-7xl mx-auto px-4 py-12">
   <div class="text-center mb-10 reveal">
     <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-    <span class="font-black text-[13px] px-5 py-2 rounded-full tracking-wide" style="background:var(--t-brand-soft);color:var(--t-brand-deep);border:1px solid var(--t-line)" data-ar="✦ خدماتنا — بسيط ومتوسط بلمسة ملكية" data-en="✦ Our services — Simple & mid with royal touch">✦ خدماتنا — بسيط ومتوسط بلمسة ملكية</span>
-    <h2 class="text-3xl md:text-[42px] font-black mt-4 lux-head" data-ar="شنو نركّبو لك في حوشك أو فيلتك؟" data-en="What can we install for you?">شنو نركّبو لك في حوشك أو فيلتك؟</h2>
-    <p class="font-semibold mt-3 max-w-2xl mx-auto" style="color:var(--t-muted)" data-ar="كل الصور مطابقة تماماً لنوع الشغل: حدائق، جلسات خارجية، ومواقف سيارات — خامات اقتصادية بتشطيب فاخر تعيش مع شمس ليبيا." data-en="All photos exactly match the work: gardens, patios & car parks — budget materials with luxury finish for Libya's sun.">كل الصور مطابقة تماماً لنوع الشغل: حدائق، جلسات خارجية، ومواقف سيارات — خامات اقتصادية بتشطيب فاخر تعيش مع شمس ليبيا.</p>
+    <span class="font-black text-[13px] px-5 py-2 rounded-full tracking-wide" style="background:var(--t-brand-soft);color:var(--t-brand-deep);border:1px solid var(--t-line)" data-admin="sections.services.badge" data-ar="✦ خدماتنا — بسيط ومتوسط بلمسة ملكية" data-en="✦ Our services — Simple & mid with royal touch">✦ خدماتنا — بسيط ومتوسط بلمسة ملكية</span>
+    <h2 class="text-3xl md:text-[42px] font-black mt-4 lux-head" data-admin="sections.services.title" data-ar="شنو نركّبو لك في حوشك أو فيلتك؟" data-en="What can we install for you?">شنو نركّبو لك في حوشك أو فيلتك؟</h2>
+    <p class="font-semibold mt-3 max-w-2xl mx-auto" style="color:var(--t-muted)" data-admin="sections.services.subtitle" data-ar="كل الصور مطابقة تماماً لنوع الشغل: حدائق، جلسات خارجية، ومواقف سيارات — خامات اقتصادية بتشطيب فاخر تعيش مع شمس ليبيا." data-en="All photos exactly match the work: gardens, patios & car parks — budget materials with luxury finish for Libya's sun.">كل الصور مطابقة تماماً لنوع الشغل: حدائق، جلسات خارجية، ومواقف سيارات — خامات اقتصادية بتشطيب فاخر تعيش مع شمس ليبيا.</p>
   </div>
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5" id="servicesGrid">
     <!-- SAIL -->
     <div class="reveal lux-card card-shine flex flex-col">
       <div class="img-zoom h-56 relative">
@@ -405,14 +406,14 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 </section>
 
 <!-- PARALLAX CTA -->
-<section class="relative py-20 parallax-bg overflow-hidden" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop')">
+<section class="relative py-20 parallax-bg overflow-hidden" data-admin-bg="sections.parallax.bg" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop')">
   <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(7,6,5,.88),rgba(20,16,10,.72))"></div>
   <div class="max-w-5xl mx-auto px-4 text-center relative reveal">
     <div class="divider-crown mb-2"><i class="fa-solid fa-crown"></i></div>
-    <h2 class="text-3xl md:text-5xl font-black text-white lux-head leading-tight" data-ar="فخامة الفيلا تبدأ من الجلسة الخارجية" data-en="Villa luxury starts from the outdoor patio">فخامة الفيلا تبدأ من الجلسة الخارجية</h2>
+    <h2 class="text-3xl md:text-5xl font-black lux-head leading-tight" data-admin="sections.parallax.title" data-ar="فخامة الفيلا تبدأ من الجلسة الخارجية" data-en="Villa luxury starts from the outdoor patio">فخامة الفيلا تبدأ من الجلسة الخارجية</h2>
     <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-    <p class="text-white/75 font-semibold max-w-2xl mx-auto mb-8" data-ar="صورة خلفية عالية الجودة لفيلا ليلية — نفس مستوى التشطيب الذي نقدمه: حديد نظيف، قماش مشدود، وإضاءة دافئة للسهرات العائلية." data-en="High-quality night villa background — same finish level we deliver: clean steel, tight fabric & warm lights for family nights.">صورة خلفية عالية الجودة لفيلا ليلية — نفس مستوى التشطيب الذي نقدمه: حديد نظيف، قماش مشدود، وإضاءة دافئة للسهرات العائلية.</p>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+    <p class="text-white/75 font-semibold max-w-2xl mx-auto mb-8" data-admin="sections.parallax.desc" data-ar="صورة خلفية عالية الجودة لفيلا ليلية — نفس مستوى التشطيب الذي نقدمه: حديد نظيف، قماش مشدود، وإضاءة دافئة للسهرات العائلية." data-en="High-quality night villa background — same finish level we deliver: clean steel, tight fabric & warm lights for family nights.">صورة خلفية عالية الجودة لفيلا ليلية — نفس مستوى التشطيب الذي نقدمه: حديد نظيف، قماش مشدود، وإضاءة دافئة للسهرات العائلية.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto" id="parallaxStats">
       <div class="glass rounded-2xl p-4"><div class="font-black text-2xl text-white">90%</div><div class="text-[12px] font-bold text-white/70" data-ar="تظليل وحماية UV" data-en="UV shading">تظليل وحماية UV</div></div>
       <div class="glass rounded-2xl p-4"><div class="font-black text-2xl" style="color:#D4AF37">48h</div><div class="text-[12px] font-bold text-white/70" data-ar="سرعة التركيب" data-en="Fast install">سرعة التركيب</div></div>
       <div class="glass rounded-2xl p-4"><div class="font-black text-2xl text-white">2yr</div><div class="text-[12px] font-bold text-white/70" data-ar="ضمان حقيقي" data-en="Real warranty">ضمان حقيقي</div></div>
@@ -428,10 +429,10 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
   <div class="max-w-7xl mx-auto px-4 relative">
     <div class="text-center mb-10 reveal">
       <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-      <h2 class="text-3xl md:text-[42px] font-black lux-head" data-ar="الأنواع والأسعار بشفافية ملكية" data-en="Types & prices with royal transparency">الأنواع والأسعار بشفافية ملكية</h2>
-      <p class="opacity-70 font-semibold mt-2 max-w-2xl mx-auto" data-ar="نشتغل فقط في البسيط والمتوسط — ولهذا أسعارنا في المتناول. الأنواع الفخمة المبالغ فيها لا نوفرها عمداً." data-en="We only do simple & mid-range — that's why we're affordable. We intentionally skip overpriced luxury types.">نشتغل فقط في البسيط والمتوسط — ولهذا أسعارنا في المتناول. الأنواع الفخمة المبالغ فيها لا نوفرها عمداً.</p>
+      <h2 class="text-3xl md:text-[42px] font-black lux-head" data-admin="sections.prices.title" data-ar="الأنواع والأسعار بشفافية ملكية" data-en="Types & prices with royal transparency">الأنواع والأسعار بشفافية ملكية</h2>
+      <p class="opacity-70 font-semibold mt-2 max-w-2xl mx-auto" data-admin="sections.prices.subtitle" data-ar="نشتغل فقط في البسيط والمتوسط — ولهذا أسعارنا في المتناول. الأنواع الفخمة المبالغ فيها لا نوفرها عمداً." data-en="We only do simple & mid-range — that's why we're affordable. We intentionally skip overpriced luxury types.">نشتغل فقط في البسيط والمتوسط — ولهذا أسعارنا في المتناول. الأنواع الفخمة المبالغ فيها لا نوفرها عمداً.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-5 items-stretch">
+    <div class="grid md:grid-cols-3 gap-5 items-stretch" id="pricesGrid">
       <!-- ECONOMY -->
       <div class="reveal rounded-[26px] p-[2px]" style="background:linear-gradient(135deg,#3AA67C,#D9ECE1)">
         <div class="rounded-[24px] p-6 h-full" style="background:var(--t-card);color:var(--t-ink)">
@@ -487,8 +488,8 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <section id="calc" class="max-w-7xl mx-auto px-4 py-14">
   <div class="text-center mb-8 reveal">
     <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-    <h2 class="text-3xl md:text-[40px] font-black lux-head" data-ar="حاسبة التكلفة الملكية" data-en="Royal cost calculator">حاسبة التكلفة الملكية</h2>
-    <p class="font-semibold" style="color:var(--t-muted)" data-ar="حرّك المقاسات واختار النوع واللون — السعر تقريبي ويشمل التركيب داخل طرابلس." data-en="Adjust sizes, type & color — estimate includes installation in Tripoli.">حرّك المقاسات واختار النوع واللون — السعر تقريبي ويشمل التركيب داخل طرابلس.</p>
+    <h2 class="text-3xl md:text-[40px] font-black lux-head" data-admin="sections.calc.title" data-ar="حاسبة التكلفة الملكية" data-en="Royal cost calculator">حاسبة التكلفة الملكية</h2>
+    <p class="font-semibold" style="color:var(--t-muted)" data-admin="sections.calc.subtitle" data-ar="حرّك المقاسات واختار النوع واللون — السعر تقريبي ويشمل التركيب داخل طرابلس." data-en="Adjust sizes, type & color — estimate includes installation in Tripoli.">حرّك المقاسات واختار النوع واللون — السعر تقريبي ويشمل التركيب داخل طرابلس.</p>
   </div>
   <div class="rounded-[28px] border shadow-lux overflow-hidden grid lg:grid-cols-2 reveal" style="background:var(--t-card);border-color:var(--t-gold)">
     <div class="p-7 md:p-10">
@@ -519,8 +520,8 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
           <span id="colorName" data-ar="بيج صحراوي ملكي" data-en="Royal desert beige" class="text-sm font-black self-center mr-2 px-3 py-1 rounded-full" style="background:var(--t-sand)">بيج صحراوي ملكي</span>
         </div>
       </div>
-      <label class="flex items-center gap-3 rounded-2xl p-3 font-bold text-sm cursor-pointer mb-2 border" style="background:var(--t-sand);border-color:var(--t-line)"><input id="optCurtain" type="checkbox" class="w-5 h-5 accent-yellow-700"><span data-ar="+ ستارة جانبية (+25 د.ل/متر طولي)" data-en="+ Side curtain (+25 LYD/m)">+ ستارة جانبية (+25 د.ل/متر طولي)</span></label>
-      <label class="flex items-center gap-3 rounded-2xl p-3 font-bold text-sm cursor-pointer border" style="background:var(--t-sand);border-color:var(--t-line)"><input id="optLight" type="checkbox" class="w-5 h-5 accent-yellow-700"><span data-ar="+ إضاءة ليد ملكية للجلسة (+180 د.ل)" data-en="+ Royal LED lights (+180 LYD)">+ إضاءة ليد ملكية للجلسة (+180 د.ل)</span></label>
+      <label class="flex items-center gap-3 rounded-2xl p-3 font-bold text-sm cursor-pointer mb-2 border" style="background:var(--t-sand);border-color:var(--t-line)"><input id="optCurtain" type="checkbox" class="w-5 h-5 accent-yellow-700"><span id="optCurtainLabel" data-ar="+ ستارة جانبية (+25 د.ل/متر طولي)" data-en="+ Side curtain (+25 LYD/m)">+ ستارة جانبية (+25 د.ل/متر طولي)</span></label>
+      <label class="flex items-center gap-3 rounded-2xl p-3 font-bold text-sm cursor-pointer border" style="background:var(--t-sand);border-color:var(--t-line)"><input id="optLight" type="checkbox" class="w-5 h-5 accent-yellow-700"><span id="optLightLabel" data-ar="+ إضاءة ليد ملكية للجلسة (+180 د.ل)" data-en="+ Royal LED lights (+180 LYD)">+ إضاءة ليد ملكية للجلسة (+180 د.ل)</span></label>
     </div>
     <div class="relative p-7 md:p-10 flex flex-col justify-center overflow-hidden text-white" style="background:linear-gradient(135deg,#0B0A08,#241D12)">
       <div class="absolute inset-0 opacity-20" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop');background-size:cover;background-position:center"></div>
@@ -538,7 +539,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
         <div class="opacity-60 font-bold text-sm" data-ar="التكلفة التقديرية شاملة التركيب الملكي:" data-en="Estimated cost incl. royal installation:">التكلفة التقديرية شاملة التركيب الملكي:</div>
         <div class="font-black text-6xl my-1" style="color:#F5E6B8;text-shadow:0 4px 20px rgba(212,175,55,.35)"><span id="priceOut" dir="ltr">1900</span> <span class="text-lg" data-ar="د.ل" data-en="LYD">د.ل</span></div>
         <div class="text-sm font-bold mb-4" style="color:#D4AF37"><span data-ar="النطاق المتوقع:" data-en="Expected range:">النطاق المتوقع:</span> <span id="priceRange" dir="ltr">1710 - 2090</span> <span data-ar="د.ل" data-en="LYD">د.ل</span></div>
-        <div class="glass rounded-2xl p-3.5 text-[13px] font-semibold leading-relaxed mb-5 text-white/85" data-ar="✅ السعر يشمل: الحديد + القماش + الدهان + التركيب + النقل داخل طرابلس. المعاينة النهائية مجانية لتثبيت السعر." data-en="✅ Includes: frame + fabric + paint + install + transport in Tripoli. Final free visit confirms price.">✅ السعر يشمل: الحديد + القماش + الدهان + التركيب + النقل داخل طرابلس. المعاينة النهائية مجانية لتثبيت السعر.</div>
+        <div class="glass rounded-2xl p-3.5 text-[13px] font-semibold leading-relaxed mb-5 text-white/85" data-admin="calculator.includesNote" data-ar="✅ السعر يشمل: الحديد + القماش + الدهان + التركيب + النقل داخل طرابلس. المعاينة النهائية مجانية لتثبيت السعر." data-en="✅ Includes: frame + fabric + paint + install + transport in Tripoli. Final free visit confirms price.">✅ السعر يشمل: الحديد + القماش + الدهان + التركيب + النقل داخل طرابلس. المعاينة النهائية مجانية لتثبيت السعر.</div>
         <div class="flex gap-2">
           <button onclick="sendCalcToWhatsapp()" class="flex-1 bg-[#25D366] text-white rounded-2xl py-3.5 font-black hover:brightness-95 transition flex items-center justify-center gap-2 shadow-lg"><i class="fa-brands fa-whatsapp text-xl"></i><span data-ar="اطلب بهذا السعر" data-en="Order at this price">اطلب بهذا السعر</span></button>
           <a href="#contact" class="flex-1 rounded-2xl py-3.5 font-black text-center transition hover:opacity-90 border" style="background:rgba(255,255,255,.1);border-color:rgba(212,175,55,.5);color:#F5E6B8" data-ar="احجز معاينة" data-en="Book visit">احجز معاينة</a>
@@ -555,10 +556,10 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 reveal">
       <div>
         <div class="ornament !justify-start !mx-0"><span style="width:50px"></span><i class="fa-solid fa-diamond"></i></div>
-        <h2 class="text-3xl md:text-[38px] font-black lux-head" data-ar="شغلنا على الطبيعة — صور تطابق الواقع" data-en="Our real work — photos match reality">شغلنا على الطبيعة — صور تطابق الواقع</h2>
-        <p class="font-semibold mt-1" style="color:var(--t-muted)" data-ar="حدائق وفلل حقيقية + فريق التركيب — بدون صور فخمة مضللة. كل صورة مراجعة وتطابق المحتوى." data-en="Real gardens & villas + install team — no misleading renders. Every photo verified to match content.">حدائق وفلل حقيقية + فريق التركيب — بدون صور فخمة مضللة. كل صورة مراجعة وتطابق المحتوى.</p>
+        <h2 class="text-3xl md:text-[38px] font-black lux-head" data-admin="sections.gallery.title" data-ar="شغلنا على الطبيعة — صور تطابق الواقع" data-en="Our real work — photos match reality">شغلنا على الطبيعة — صور تطابق الواقع</h2>
+        <p class="font-semibold mt-1" style="color:var(--t-muted)" data-admin="sections.gallery.subtitle" data-ar="حدائق وفلل حقيقية + فريق التركيب — بدون صور فخمة مضللة. كل صورة مراجعة وتطابق المحتوى." data-en="Real gardens & villas + install team — no misleading renders. Every photo verified to match content.">حدائق وفلل حقيقية + فريق التركيب — بدون صور فخمة مضللة. كل صورة مراجعة وتطابق المحتوى.</p>
       </div>
-      <div class="flex gap-2 flex-wrap">
+      <div class="flex gap-2 flex-wrap" id="galleryFilters">
         <button onclick="filterGallery('all',this)" class="filter-btn active border-2 px-4 py-2 rounded-full font-bold text-sm" style="background:var(--t-card);border-color:var(--t-line)" data-ar="الكل" data-en="All">الكل</button>
         <button onclick="filterGallery('garden',this)" class="filter-btn border-2 px-4 py-2 rounded-full font-bold text-sm" style="background:var(--t-card);border-color:var(--t-line)" data-ar="حدائق" data-en="Gardens">حدائق</button>
         <button onclick="filterGallery('villa',this)" class="filter-btn border-2 px-4 py-2 rounded-full font-bold text-sm" style="background:var(--t-card);border-color:var(--t-line)" data-ar="فلل" data-en="Villas">فلل</button>
@@ -630,9 +631,9 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <section class="max-w-7xl mx-auto px-4 py-14">
   <div class="text-center mb-10 reveal">
     <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-    <h2 class="text-3xl md:text-[38px] font-black lux-head" data-ar="كيف نخدمك؟ 4 خطوات ملكية بس" data-en="How we work? Just 4 royal steps">كيف نخدمك؟ 4 خطوات ملكية بس</h2>
+    <h2 class="text-3xl md:text-[38px] font-black lux-head" data-admin="sections.steps.title" data-ar="كيف نخدمك؟ 4 خطوات ملكية بس" data-en="How we work? Just 4 royal steps">كيف نخدمك؟ 4 خطوات ملكية بس</h2>
   </div>
-  <div class="relative grid md:grid-cols-4 gap-6">
+  <div class="relative grid md:grid-cols-4 gap-6" id="stepsGrid">
     <div class="step-line"></div>
     <div class="reveal lux-card text-center p-6 relative card-shine">
       <div class="w-[70px] h-[70px] mx-auto rounded-2xl text-white flex items-center justify-center text-2xl font-black mb-3 relative z-10 shadow-lg" style="background:linear-gradient(135deg,#141210,#3A322A);border:1px solid var(--t-gold)">1<i class="fa-solid fa-phone absolute -bottom-2 -left-2 bg-green-500 w-7 h-7 rounded-full text-[13px] flex items-center justify-center border-2 border-white"></i></div>
@@ -662,23 +663,23 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
   <div class="grid lg:grid-cols-2 gap-6 items-stretch">
     <div class="reveal lux-frame shadow-lux">
       <div class="lux-frame-inner min-h-[420px] h-full relative img-zoom">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="ورشة حدادة في طرابلس — تصنيع هياكل حديد المظلات" loading="lazy">
-        <span class="photo-tag"><i class="fa-solid fa-helmet-safety text-amber-300"></i><span data-ar="صورة مطابقة: ورشتنا والحدادة" data-en="Matching: our workshop & steel">صورة مطابقة: ورشتنا والحدادة</span></span>
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" data-admin-img="why.image" class="absolute inset-0 w-full h-full object-cover" alt="ورشة حدادة في طرابلس — تصنيع هياكل حديد المظلات" loading="lazy">
+        <span class="photo-tag"><i class="fa-solid fa-helmet-safety text-amber-300"></i><span data-admin="why.imageTag" data-ar="صورة مطابقة: ورشتنا والحدادة" data-en="Matching: our workshop & steel">صورة مطابقة: ورشتنا والحدادة</span></span>
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
         <div class="absolute bottom-4 right-4 left-4 rounded-2xl p-4 flex items-center gap-3 glass !bg-black/55 text-white">
-          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=200&auto=format&fit=crop" class="w-16 h-16 rounded-xl object-cover border" style="border-color:var(--t-gold)" alt="فيلا بعد تركيب المظلة — تشطيب نهائي">
-          <div><div class="font-black text-sm" data-ar="ورشة خاصة في سوق الجمعة — شغلنا بيدينا" data-en="Own workshop in Souq Jomaa — handmade">ورشة خاصة في سوق الجمعة — شغلنا بيدينا</div><div class="text-xs font-bold text-white/70" data-ar="بدون وسطاء — لهذا سعرنا أرخص بـ 20%" data-en="No middlemen — 20% cheaper">بدون وسطاء — لهذا سعرنا أرخص بـ 20%</div></div>
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=200&auto=format&fit=crop" data-admin-img="why.thumb" class="w-16 h-16 rounded-xl object-cover border" style="border-color:var(--t-gold)" alt="فيلا بعد تركيب المظلة — تشطيب نهائي">
+          <div><div class="font-black text-sm" data-admin="why.overlayTitle" data-ar="ورشة خاصة في سوق الجمعة — شغلنا بيدينا" data-en="Own workshop in Souq Jomaa — handmade">ورشة خاصة في سوق الجمعة — شغلنا بيدينا</div><div class="text-xs font-bold text-white/70" data-admin="why.overlayDesc" data-ar="بدون وسطاء — لهذا سعرنا أرخص بـ 20%" data-en="No middlemen — 20% cheaper">بدون وسطاء — لهذا سعرنا أرخص بـ 20%</div></div>
         </div>
       </div>
     </div>
     <div class="reveal text-white rounded-[28px] p-8 md:p-10 relative overflow-hidden shadow-lux border" style="background:linear-gradient(135deg,var(--t-inkbox),var(--t-inkbox2));color:var(--t-inkbox-text);border-color:var(--t-gold)">
-      <div class="absolute inset-0 opacity-[0.12]" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop');background-size:cover"></div>
+      <div class="absolute inset-0 opacity-[0.12]" data-admin-bg="why.bgImage" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop');background-size:cover"></div>
       <div class="absolute -top-20 -left-20 w-64 h-64 blur-[80px] rounded-full" style="background:rgba(212,175,55,.28)"></div>
       <div class="relative">
         <div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-crown" style="color:var(--t-gold)"></i><span class="text-[12px] font-black tracking-[3px]" style="color:var(--t-gold)">WHY ROYAL SHADES</span></div>
-        <h2 class="text-3xl font-black mb-2 lux-head" data-ar="ليش العائلات في طرابلس يختارونا؟" data-en="Why Tripoli families choose us?">ليش العائلات في طرابلس يختارونا؟</h2>
-        <p class="opacity-60 font-semibold mb-6" data-ar="لأننا واضحين: جودة كويسة بلمسة فاخرة وسعر معقول، وما نغشك بصور مستوردة." data-en="Because we're clear: good quality with luxury touch at fair price, no fake photos.">لأننا واضحين: جودة كويسة بلمسة فاخرة وسعر معقول، وما نغشك بصور مستوردة.</p>
-        <div class="space-y-4">
+        <h2 class="text-3xl font-black mb-2 lux-head" data-admin="sections.why.title" data-ar="ليش العائلات في طرابلس يختارونا؟" data-en="Why Tripoli families choose us?">ليش العائلات في طرابلس يختارونا؟</h2>
+        <p class="opacity-60 font-semibold mb-6" data-admin="sections.why.subtitle" data-ar="لأننا واضحين: جودة كويسة بلمسة فاخرة وسعر معقول، وما نغشك بصور مستوردة." data-en="Because we're clear: good quality with luxury touch at fair price, no fake photos.">لأننا واضحين: جودة كويسة بلمسة فاخرة وسعر معقول، وما نغشك بصور مستوردة.</p>
+        <div class="space-y-4" id="whyPoints">
           <div class="flex gap-3 bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur">
             <div class="tick text-white shrink-0" style="background:linear-gradient(135deg,#B8964E,#E9D9B8);color:#1A1408"><i class="fa-solid fa-check"></i></div>
             <div><div class="font-black" data-ar="خامات مجرّبة في شمس طرابلس" data-en="Tested in Tripoli sun">خامات مجرّبة في شمس طرابلس</div><div class="text-sm opacity-60 font-semibold" data-ar="قماش لا يتمزق مع القبلي، وحديد مدهون ضد الرطوبة والملوحة." data-en="Fabric resists ghibli wind, painted iron vs humidity & salt.">قماش لا يتمزق مع القبلي، وحديد مدهون ضد الرطوبة والملوحة.</div></div>
@@ -703,10 +704,10 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
   <div class="max-w-5xl mx-auto px-4 relative">
     <div class="text-center mb-8 reveal">
       <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-      <h2 class="text-3xl md:text-[38px] font-black lux-head" data-ar="شنو قالو جيرانك في طرابلس؟" data-en="What your Tripoli neighbours say?">شنو قالو جيرانك في طرابلس؟</h2>
+      <h2 class="text-3xl md:text-[38px] font-black lux-head" data-admin="sections.reviews.title" data-ar="شنو قالو جيرانك في طرابلس؟" data-en="What your Tripoli neighbours say?">شنو قالو جيرانك في طرابلس؟</h2>
       <div class="flex items-center justify-center gap-1 mt-3" style="color:#D4AF37">
         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        <span class="font-black mr-2" style="color:var(--t-ink)">4.8 / 5 — 210 <span data-ar="تقييم" data-en="reviews">تقييم</span></span>
+        <span class="font-black mr-2" style="color:var(--t-ink)"><span data-admin-text="reviews.average">4.8</span> / 5 — <span data-admin-text="reviews.count">210</span> <span data-admin="reviews.label" data-ar="تقييم" data-en="reviews">تقييم</span></span>
       </div>
     </div>
     <div class="reveal relative rounded-[28px] p-2 md:p-3 border shadow-lux" style="background:var(--t-sand);border-color:var(--t-gold)">
@@ -748,7 +749,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <section class="max-w-4xl mx-auto px-4 py-14">
   <div class="text-center mb-8 reveal">
     <div class="ornament"><span></span><i class="fa-solid fa-diamond"></i><span></span></div>
-    <h2 class="text-3xl font-black lux-head" data-ar="أسئلة تتكرر من أهل طرابلس" data-en="Questions from Tripoli people">أسئلة تتكرر من أهل طرابلس</h2>
+    <h2 class="text-3xl font-black lux-head" data-admin="sections.faq.title" data-ar="أسئلة تتكرر من أهل طرابلس" data-en="Questions from Tripoli people">أسئلة تتكرر من أهل طرابلس</h2>
   </div>
   <div class="space-y-3" id="faqList">
     <div class="faq-item reveal border rounded-2xl overflow-hidden shadow-sm" style="background:var(--t-card);border-color:var(--t-line)">
@@ -777,13 +778,13 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
 <!-- CTA BANNER -->
 <section class="max-w-7xl mx-auto px-4 pb-14">
   <div class="reveal relative rounded-[30px] overflow-hidden shadow-lux border" style="border-color:var(--t-gold)">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="فيلا فاخرة مع حديقة — مثال مشروع مظلة">
+    <img data-admin-img="sections.promo.bg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="فيلا فاخرة مع حديقة — مثال مشروع مظلة">
     <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(7,6,5,.92),rgba(20,16,10,.72))"></div>
     <div class="relative p-8 md:p-12 grid md:grid-cols-[1fr_auto] gap-6 items-center">
       <div>
-        <div class="inline-flex items-center gap-2 glass px-4 py-1.5 rounded-full text-[12px] font-black text-white mb-3"><i class="fa-solid fa-bolt" style="color:#D4AF37"></i><span data-ar="عرض هذا الشهر — خصم 10% + إضاءة هدية" data-en="This month — 10% off + free lights">عرض هذا الشهر — خصم 10% + إضاءة هدية</span></div>
-        <h3 class="text-2xl md:text-4xl font-black text-white lux-head" data-ar="حوّل حوشك لجلسة ملكية قبل الصيف" data-en="Turn your yard into a royal patio before summer">حوّل حوشك لجلسة ملكية قبل الصيف</h3>
-        <p class="text-white/70 font-semibold mt-2" data-ar="احجز معاينتك المجانية اليوم — الأماكن محدودة في طرابلس." data-en="Book your free visit today — limited slots in Tripoli.">احجز معاينتك المجانية اليوم — الأماكن محدودة في طرابلس.</p>
+        <div class="inline-flex items-center gap-2 glass px-4 py-1.5 rounded-full text-[12px] font-black text-white mb-3"><i class="fa-solid fa-bolt" style="color:#D4AF37"></i><span data-admin="sections.promo.badge" data-ar="عرض هذا الشهر — خصم 10% + إضاءة هدية" data-en="This month — 10% off + free lights">عرض هذا الشهر — خصم 10% + إضاءة هدية</span></div>
+        <h3 class="text-2xl md:text-4xl font-black text-white lux-head" data-admin="sections.promo.title" data-ar="حوّل حوشك لجلسة ملكية قبل الصيف" data-en="Turn your yard into a royal patio before summer">حوّل حوشك لجلسة ملكية قبل الصيف</h3>
+        <p class="text-white/70 font-semibold mt-2" data-admin="sections.promo.subtitle" data-ar="احجز معاينتك المجانية اليوم — الأماكن محدودة في طرابلس." data-en="Book your free visit today — limited slots in Tripoli.">احجز معاينتك المجانية اليوم — الأماكن محدودة في طرابلس.</p>
       </div>
       <div class="flex flex-col sm:flex-row md:flex-col gap-3">
         <a href="#contact" class="btn-gold px-8 py-4 rounded-2xl font-black text-center whitespace-nowrap" data-ar="احجز الآن — مجاني" data-en="Book now — Free">احجز الآن — مجاني</a>
@@ -799,47 +800,47 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
   <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 relative">
     <div class="reveal">
       <div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-crown" style="color:var(--t-gold)"></i><span class="text-[12px] font-black tracking-[3px]" style="color:var(--t-gold)">CONTACT US</span></div>
-      <h2 class="text-3xl md:text-[40px] font-black lux-head mb-3" data-ar="احجز معاينتك المجانية" data-en="Book your free visit">احجز معاينتك المجانية</h2>
-      <p class="opacity-60 font-semibold mb-7" data-ar="ابعت التفاصيل ونتواصل معاك خلال ساعات الشغل — أو اتصل بينا مباشرة." data-en="Send details & we reply within working hours — or call directly.">ابعت التفاصيل ونتواصل معاك خلال ساعات الشغل — أو اتصل بينا مباشرة.</p>
+      <h2 class="text-3xl md:text-[40px] font-black lux-head mb-3" data-admin="contact.title" data-ar="احجز معاينتك المجانية" data-en="Book your free visit">احجز معاينتك المجانية</h2>
+      <p class="opacity-60 font-semibold mb-7" data-admin="contact.subtitle" data-ar="ابعت التفاصيل ونتواصل معاك خلال ساعات الشغل — أو اتصل بينا مباشرة." data-en="Send details & we reply within working hours — or call directly.">ابعت التفاصيل ونتواصل معاك خلال ساعات الشغل — أو اتصل بينا مباشرة.</p>
       <div class="space-y-3.5">
         <a href="tel:+218912345678" class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 hover:bg-white/10 transition backdrop-blur">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl shrink-0" style="background:linear-gradient(135deg,#B8964E,#E9D9B8);color:#1A1408"><i class="fa-solid fa-phone"></i></div>
-          <div><div class="font-black" data-ar="اتصل بينا" data-en="Call us">اتصل بينا</div><div class="text-sm opacity-60 font-bold" dir="ltr">091-234 5678</div></div>
+          <div><div class="font-black" data-admin="contact.callLabel" data-ar="اتصل بينا" data-en="Call us">اتصل بينا</div><div class="text-sm opacity-60 font-bold" dir="ltr" data-admin-text="settings.phone">091-234 5678</div></div>
         </a>
         <a href="https://wa.me/218912345678" target="_blank" class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 hover:bg-white/10 transition backdrop-blur">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl shrink-0 bg-[#25D366] text-white"><i class="fa-brands fa-whatsapp"></i></div>
-          <div><div class="font-black" data-ar="واتساب مباشر" data-en="Direct WhatsApp">واتساب مباشر</div><div class="text-sm opacity-60 font-bold" data-ar="نرد بسرعة على الصور والمقاسات" data-en="Fast reply to photos & sizes">نرد بسرعة على الصور والمقاسات</div></div>
+          <div><div class="font-black" data-admin="contact.whatsappLabel" data-ar="واتساب مباشر" data-en="Direct WhatsApp">واتساب مباشر</div><div class="text-sm opacity-60 font-bold" data-admin="contact.whatsappSub" data-ar="نرد بسرعة على الصور والمقاسات" data-en="Fast reply to photos & sizes">نرد بسرعة على الصور والمقاسات</div></div>
         </a>
         <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl shrink-0" style="background:linear-gradient(135deg,#1F7A56,#3AA67C);color:#fff"><i class="fa-solid fa-location-dot"></i></div>
-          <div><div class="font-black" data-ar="ورشتنا" data-en="Our workshop">ورشتنا</div><div class="text-sm opacity-60 font-bold" data-ar="سوق الجمعة، طرابلس، ليبيا" data-en="Souq Jomaa, Tripoli, Libya">سوق الجمعة، طرابلس، ليبيا</div></div>
+          <div><div class="font-black" data-admin="contact.workshopLabel" data-ar="ورشتنا" data-en="Our workshop">ورشتنا</div><div class="text-sm opacity-60 font-bold" data-admin="settings.address" data-ar="سوق الجمعة، طرابلس، ليبيا" data-en="Souq Jomaa, Tripoli, Libya">سوق الجمعة، طرابلس، ليبيا</div></div>
         </div>
         <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl shrink-0" style="background:linear-gradient(135deg,#0E3C5E,#1A6EA6);color:#fff"><i class="fa-regular fa-clock"></i></div>
-          <div><div class="font-black" data-ar="ساعات الشغل" data-en="Working hours">ساعات الشغل</div><div class="text-sm opacity-60 font-bold" data-ar="السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م" data-en="Sat - Thu: 9AM - 7PM | Fri: 4PM - 7PM">السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م</div></div>
+          <div><div class="font-black" data-admin="contact.hoursLabel" data-ar="ساعات الشغل" data-en="Working hours">ساعات الشغل</div><div class="text-sm opacity-60 font-bold" data-admin="settings.hours" data-ar="السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م" data-en="Sat - Thu: 9AM - 7PM | Fri: 4PM - 7PM">السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م</div></div>
         </div>
       </div>
       <div class="mt-6">
-        <div class="font-black text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-map" style="color:var(--t-gold)"></i><span data-ar="نخدم كل أحياء طرابلس:" data-en="We cover all Tripoli districts:">نخدم كل أحياء طرابلس:</span></div>
+        <div class="font-black text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-map" style="color:var(--t-gold)"></i><span data-admin="contact.districtsTitle" data-ar="نخدم كل أحياء طرابلس:" data-en="We cover all Tripoli districts:">نخدم كل أحياء طرابلس:</span></div>
         <div class="flex flex-wrap gap-2" id="districtChips"></div>
       </div>
     </div>
     <div class="reveal reveal-d1 rounded-[26px] p-6 md:p-8 border" style="background:rgba(255,255,255,.05);border-color:rgba(212,175,55,.35);backdrop-filter:blur(12px)">
       <form id="contactForm" class="space-y-4">
-        <div class="font-black text-lg flex items-center gap-2 mb-1"><i class="fa-solid fa-calendar-check" style="color:var(--t-gold)"></i><span data-ar="نموذج الحجز السريع" data-en="Quick booking form">نموذج الحجز السريع</span></div>
+        <div class="font-black text-lg flex items-center gap-2 mb-1"><i class="fa-solid fa-calendar-check" style="color:var(--t-gold)"></i><span data-admin="contact.formTitle" data-ar="نموذج الحجز السريع" data-en="Quick booking form">نموذج الحجز السريع</span></div>
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
-            <label class="font-bold text-sm block mb-1.5" data-ar="الاسم الكريم" data-en="Your name">الاسم الكريم</label>
-            <input id="cfName" type="text" required class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold" data-ar-placeholder="مثال: أحمد العربي" data-en-placeholder="e.g. Ahmed Alarabi" placeholder="مثال: أحمد العربي">
+            <label class="font-bold text-sm block mb-1.5" data-admin="contact.nameLabel" data-ar="الاسم الكريم" data-en="Your name">الاسم الكريم</label>
+            <input id="cfName" type="text" required class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold" data-admin-ph="contact.namePh" data-ar-placeholder="مثال: أحمد العربي" data-en-placeholder="e.g. Ahmed Alarabi" placeholder="مثال: أحمد العربي">
           </div>
           <div>
-            <label class="font-bold text-sm block mb-1.5" data-ar="رقم الهاتف" data-en="Phone number">رقم الهاتف</label>
+            <label class="font-bold text-sm block mb-1.5" data-admin="contact.phoneLabel" data-ar="رقم الهاتف" data-en="Phone number">رقم الهاتف</label>
             <input id="cfPhone" type="tel" required class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold" dir="ltr" placeholder="091-XXXX XXX">
           </div>
         </div>
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
-            <label class="font-bold text-sm block mb-1.5" data-ar="الحي / المنطقة" data-en="District / area">الحي / المنطقة</label>
+            <label class="font-bold text-sm block mb-1.5" data-admin="contact.districtLabel" data-ar="الحي / المنطقة" data-en="District / area">الحي / المنطقة</label>
             <select id="cfDistrict" class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold">
               <option data-ar="عين زارة" data-en="Ain Zara">عين زارة</option>
               <option data-ar="تاجوراء" data-en="Tajoura">تاجوراء</option>
@@ -855,7 +856,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
             </select>
           </div>
           <div>
-            <label class="font-bold text-sm block mb-1.5" data-ar="نوع المظلة" data-en="Shade type">نوع المظلة</label>
+            <label class="font-bold text-sm block mb-1.5" data-admin="contact.typeLabel" data-ar="نوع المظلة" data-en="Shade type">نوع المظلة</label>
             <select id="cfType" class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold">
               <option data-ar="شراعي قماش (اقتصادي)" data-en="Sail cloth (economy)">شراعي قماش (اقتصادي)</option>
               <option data-ar="حديد + PVC كوري (متوسط)" data-en="Iron + Korean PVC (mid)">حديد + PVC كوري (متوسط)</option>
@@ -866,13 +867,13 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
           </div>
         </div>
         <div>
-          <label class="font-bold text-sm block mb-1.5" data-ar="تفاصيل إضافية (المقاس التقريبي، صور الحوش...)" data-en="Extra details (approx size, yard photos...)">تفاصيل إضافية (المقاس التقريبي، صور الحوش...)</label>
-          <textarea id="cfMsg" rows="3" class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold resize-none" data-ar-placeholder="مثال: جنان 6×4 م، نبي مظلة فوق الجلسة..." data-en-placeholder="e.g. Yard 6×4 m, shade over the patio..." placeholder="مثال: جنان 6×4 م، نبي مظلة فوق الجلسة..."></textarea>
+          <label class="font-bold text-sm block mb-1.5" data-admin="contact.msgLabel" data-ar="تفاصيل إضافية (المقاس التقريبي، صور الحوش...)" data-en="Extra details (approx size, yard photos...)">تفاصيل إضافية (المقاس التقريبي، صور الحوش...)</label>
+          <textarea id="cfMsg" rows="3" class="w-full rounded-xl px-4 py-3 border bg-transparent font-bold resize-none" data-admin-ph="contact.msgPh" data-ar-placeholder="مثال: جنان 6×4 م، نبي مظلة فوق الجلسة..." data-en-placeholder="e.g. Yard 6×4 m, shade over the patio..." placeholder="مثال: جنان 6×4 م، نبي مظلة فوق الجلسة..."></textarea>
         </div>
         <button type="submit" class="w-full bg-[#25D366] text-white rounded-2xl py-4 font-black hover:brightness-95 transition flex items-center justify-center gap-2 shadow-lg">
-          <i class="fa-brands fa-whatsapp text-xl"></i><span data-ar="أرسل الطلب عبر واتساب" data-en="Send request via WhatsApp">أرسل الطلب عبر واتساب</span>
+          <i class="fa-brands fa-whatsapp text-xl"></i><span data-admin="contact.submitLabel" data-ar="أرسل الطلب عبر واتساب" data-en="Send request via WhatsApp">أرسل الطلب عبر واتساب</span>
         </button>
-        <p class="text-center text-xs font-bold opacity-50" data-ar="✅ المعاينة والقياس مجاني 100% داخل طرابلس — بدون أي التزام" data-en="✅ Free visit & measurement 100% inside Tripoli — no commitment">✅ المعاينة والقياس مجاني 100% داخل طرابلس — بدون أي التزام</p>
+        <p class="text-center text-xs font-bold opacity-50" data-admin="contact.noteText" data-ar="✅ المعاينة والقياس مجاني 100% داخل طرابلس — بدون أي التزام" data-en="✅ Free visit & measurement 100% inside Tripoli — no commitment">✅ المعاينة والقياس مجاني 100% داخل طرابلس — بدون أي التزام</p>
       </form>
     </div>
   </div>
@@ -886,7 +887,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
         <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl" style="background:linear-gradient(135deg,#7A5F2E,#C9A86A 45%,#F5E6B8 55%,#B8964E)"><i class="fa-solid fa-umbrella" style="color:#1A1408"></i></div>
         <div class="font-black text-lg">مظلات طرابلس الملكية</div>
       </div>
-      <p class="text-sm opacity-50 font-semibold leading-relaxed" data-ar="تركيب مظلات حدائق وفلل وسيارات في طرابلس منذ 2013 — أنواع بسيطة ومتوسطة بلمسة فاخرة وأسعار اقتصادية." data-en="Garden, villa & car shade installation in Tripoli since 2013 — simple & mid types with luxury touch at budget prices.">تركيب مظلات حدائق وفلل وسيارات في طرابلس منذ 2013 — أنواع بسيطة ومتوسطة بلمسة فاخرة وأسعار اقتصادية.</p>
+      <p class="text-sm opacity-50 font-semibold leading-relaxed" data-admin="settings.footerDesc" data-ar="تركيب مظلات حدائق وفلل وسيارات في طرابلس منذ 2013 — أنواع بسيطة ومتوسطة بلمسة فاخرة وأسعار اقتصادية." data-en="Garden, villa & car shade installation in Tripoli since 2013 — simple & mid types with luxury touch at budget prices.">تركيب مظلات حدائق وفلل وسيارات في طرابلس منذ 2013 — أنواع بسيطة ومتوسطة بلمسة فاخرة وأسعار اقتصادية.</p>
       <div class="flex gap-2 mt-4">
         <a href="#" class="w-10 h-10 rounded-xl glass flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#" class="w-10 h-10 rounded-xl glass flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-instagram"></i></a>
@@ -907,7 +908,7 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
     </div>
     <div>
       <div class="font-black mb-4 flex items-center gap-2"><i class="fa-solid fa-umbrella text-sm" style="color:var(--t-gold)"></i><span data-ar="خدماتنا" data-en="Our services">خدماتنا</span></div>
-      <ul class="space-y-2.5 text-sm font-bold opacity-70">
+      <ul class="space-y-2.5 text-sm font-bold opacity-70" id="footerServices">
         <li data-ar="مظلات شراعية قماش للحدائق" data-en="Sail fabric shades for gardens">مظلات شراعية قماش للحدائق</li>
         <li data-ar="حديد + قماش PVC للفلل" data-en="Iron + PVC for villas">حديد + قماش PVC للفلل</li>
         <li data-ar="مظلات سيارات بسيطة" data-en="Simple car shades">مظلات سيارات بسيطة</li>
@@ -918,16 +919,17 @@ html[dir="ltr"] .hero-arch{border-radius:30px 30px 8px 30px}
     <div>
       <div class="font-black mb-4 flex items-center gap-2"><i class="fa-solid fa-headset text-sm" style="color:var(--t-gold)"></i><span data-ar="تواصل" data-en="Get in touch">تواصل</span></div>
       <ul class="space-y-3 text-sm font-bold opacity-70">
-        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-amber-400"></i><span dir="ltr">091-234 5678</span></li>
-        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-green-400"></i><span dir="ltr">+218 91 234 5678</span></li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span data-ar="سوق الجمعة، طرابلس" data-en="Souq Jomaa, Tripoli">سوق الجمعة، طرابلس</span></li>
-        <li class="flex items-center gap-2"><i class="fa-regular fa-clock text-amber-400"></i><span data-ar="السبت - الخميس: 9ص - 7م" data-en="Sat - Thu: 9AM - 7PM">السبت - الخميس: 9ص - 7م</span></li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-amber-400"></i><span dir="ltr" data-admin-text="settings.phone">091-234 5678</span></li>
+        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-green-400"></i><span dir="ltr" data-admin-text="settings.phoneIntl">+218 91 234 5678</span></li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span data-admin="settings.addressShort" data-ar="سوق الجمعة، طرابلس" data-en="Souq Jomaa, Tripoli">سوق الجمعة، طرابلس</span></li>
+        <li class="flex items-center gap-2"><i class="fa-regular fa-clock text-amber-400"></i><span data-admin="settings.hoursShort" data-ar="السبت - الخميس: 9ص - 7م" data-en="Sat - Thu: 9AM - 7PM">السبت - الخميس: 9ص - 7م</span></li>
       </ul>
     </div>
   </div>
   <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs font-bold opacity-50" style="border-top:1px solid rgba(212,175,55,.2)">
-    <span data-ar="© 2024 مظلات طرابلس الملكية — جميع الحقوق محفوظة" data-en="© 2024 Tripoli Royal Shades — All rights reserved">© 2024 مظلات طرابلس الملكية — جميع الحقوق محفوظة</span>
-    <span data-ar="صُنع بحب في طرابلس، ليبيا 🇱🇾" data-en="Made with love in Tripoli, Libya 🇱🇾">صُنع بحب في طرابلس، ليبيا 🇱🇾</span>
+    <span data-admin="settings.copyright" data-ar="© 2024 مظلات طرابلس الملكية — جميع الحقوق محفوظة" data-en="© 2024 Tripoli Royal Shades — All rights reserved">© 2024 مظلات طرابلس الملكية — جميع الحقوق محفوظة</span>
+    <span data-admin="settings.madeWith" data-ar="صُنع بحب في طرابلس، ليبيا 🇱🇾" data-en="Made with love in Tripoli, Libya 🇱🇾">صُنع بحب في طرابلس، ليبيا 🇱🇾</span>
+    <a href="admin.html" class="inline-flex items-center gap-1.5 hover:text-amber-300 transition" title="Administration"><i class="fa-solid fa-lock text-[11px]"></i><span data-ar="إدارة" data-en="Admin">إدارة</span></a>
   </div>
 </footer>
 
@@ -964,7 +966,7 @@ var THEMES=[
  {id:'royal-night',nameAr:'ليلي ذهبي',nameEn:'Royal Night',c1:'#D4AF37',c2:'#F5E6B8',bg:'#0E0C0A',dark:true},
  {id:'emerald-night',nameAr:'ليلي زمردي',nameEn:'Emerald Night',c1:'#9AB86A',c2:'#D6EAB2',bg:'#0B1210',dark:true}
 ];
-var currentTheme=localStorage.getItem('trs-theme')||'royal';
+var currentTheme=localStorage.getItem('trs-theme')||((window.SITE_DATA&&window.SITE_DATA.settings&&window.SITE_DATA.settings.defaultTheme)||'royal');
 function buildThemeGrid(){
   var g=document.getElementById('themeGrid');
   g.innerHTML=THEMES.map(function(t){
@@ -992,7 +994,7 @@ document.addEventListener('click',function(e){
 });
 
 /* ============ LANGUAGE ============ */
-var LANG=localStorage.getItem('trs-lang')||'ar';
+var LANG=localStorage.getItem('trs-lang')||((window.SITE_DATA&&window.SITE_DATA.settings&&window.SITE_DATA.settings.defaultLang)||'ar');
 function setLang(l){
   LANG=l;
   document.documentElement.lang=l;
@@ -1016,6 +1018,7 @@ function setLang(l){
 /* ============ DISTRICTS MARQUEE + CHIPS ============ */
 var DIST={ar:['تاجوراء','عين زارة','جنزور','السراج','حي الأندلس','طريق المطار','سوق الجمعة','الفرناج','عرادة','الدريبي','الزوية الصغيرة','قصر بن غشير'],
           en:['Tajoura','Ain Zara','Janzour','Seraj','Hay Andalus','Airport Road','Souq Jomaa','Fornaj','Arada','Drebi','Al-Zawiya','Qasr Ben Ghashir']};
+if(window.SITE_DATA&&window.SITE_DATA.districts&&window.SITE_DATA.districts.ar){DIST=window.SITE_DATA.districts;}
 function buildMarquee(){
   var m=document.getElementById('districtMarquee');
   var items=DIST[LANG];
@@ -1107,13 +1110,14 @@ function closeLightbox(){
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
 
 /* ============ CALCULATOR ============ */
-var TYPES={
+var TYPES_FALLBACK={
  sail:{p:95,img:'https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=800&auto=format&fit=crop',label:{ar:'شراعي قماش',en:'Sail cloth'}},
  pvc:{p:195,img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',label:{ar:'حديد + PVC كوري',en:'Iron + Korean PVC'}},
  car:{p:165,img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=800&auto=format&fit=crop',label:{ar:'مظلة سيارات',en:'Car shade'}},
  wood:{p:240,img:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop',label:{ar:'برجولة خشبية',en:'Wood pergola'}}
 };
-var curType='sail';
+var TYPES=(function(){try{if(window.trsBuildTypes&&window.SITE_DATA&&window.SITE_DATA.products){var t=window.trsBuildTypes(window.SITE_DATA);if(t&&Object.keys(t).length)return t;}}catch(e){}return TYPES_FALLBACK;})();
+var curType=(TYPES['sail']?'sail':Object.keys(TYPES)[0]);
 function setCalcType(t){
   curType=t;
   document.querySelectorAll('#typeBtns .type-btn').forEach(function(b){b.classList.toggle('active-type',b.dataset.type===t);});
@@ -1127,8 +1131,10 @@ function calcTotal(){
   var len=+document.getElementById('lenRange').value;
   var wid=+document.getElementById('widRange').value;
   var total=len*wid*TYPES[curType].p;
-  if(document.getElementById('optCurtain').checked)total+=25*len;
-  if(document.getElementById('optLight').checked)total+=180;
+  var curtainP=(window.SITE_DATA&&window.SITE_DATA.calculator&&+window.SITE_DATA.calculator.curtainPrice)||25;
+  var lightP=(window.SITE_DATA&&window.SITE_DATA.calculator&&+window.SITE_DATA.calculator.lightPrice)||180;
+  if(document.getElementById('optCurtain').checked)total+=curtainP*len;
+  if(document.getElementById('optLight').checked)total+=lightP;
   return {len:len,wid:wid,area:len*wid,total:Math.round(total)};
 }
 function updateCalc(){
@@ -1159,8 +1165,9 @@ document.querySelectorAll('#swatches .swatch').forEach(function(s){
 function sendCalcToWhatsapp(){
   var r=calcTotal(),t=TYPES[curType];
   var opts=[];
-  if(document.getElementById('optCurtain').checked)opts.push(LANG==='ar'?'ستارة جانبية':'Side curtain');
-  if(document.getElementById('optLight').checked)opts.push(LANG==='ar'?'إضاءة ليد ملكية':'Royal LED lights');
+  var trsCalc=(window.SITE_DATA&&window.SITE_DATA.calculator)||{};
+  if(document.getElementById('optCurtain').checked)opts.push((trsCalc.curtainName&&trsCalc.curtainName[LANG])||(LANG==='ar'?'ستارة جانبية':'Side curtain'));
+  if(document.getElementById('optLight').checked)opts.push((trsCalc.lightName&&trsCalc.lightName[LANG])||(LANG==='ar'?'إضاءة ليد ملكية':'Royal LED lights'));
   var cn=document.getElementById('colorName').textContent;
   var msg;
   if(LANG==='ar'){
@@ -1180,7 +1187,7 @@ function sendCalcToWhatsapp(){
     +'• Estimated price: '+r.total.toLocaleString('en-US')+' LYD\n'
     +'I would like to book a free visit, thank you.';
   }
-  window.open('https://wa.me/218912345678?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/'+((window.SITE_DATA&&window.SITE_DATA.settings&&window.SITE_DATA.settings.whatsapp)||'218912345678')+'?text='+encodeURIComponent(msg),'_blank');
 }
 
 /* ============ TESTIMONIALS ============ */
@@ -1219,7 +1226,7 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
   }else{
     text='Hello, I\'m '+name+'\nI want a shade installed ('+type+') in '+district+'\n'+(msg?('Details: '+msg+'\n'):'')+'Contact: '+phone+'\nI would like to book a free visit.';
   }
-  window.open('https://wa.me/218912345678?text='+encodeURIComponent(text),'_blank');
+  window.open('https://wa.me/'+((window.SITE_DATA&&window.SITE_DATA.settings&&window.SITE_DATA.settings.whatsapp)||'218912345678')+'?text='+encodeURIComponent(text),'_blank');
 });
 
 /* ============ BACK TO TOP ============ */
@@ -1239,6 +1246,7 @@ buildDotsT();
 setTheme(currentTheme);
 setLang(LANG);
 updateCalc();
+if(window.applySiteDataToPage){try{window.applySiteDataToPage();}catch(e){console.warn('[site] apply data:',e);}}
 </script>
 </body>
 </html>

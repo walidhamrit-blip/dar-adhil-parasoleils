@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-07T12:00:00Z",
+  "settings": {
+    "siteName": { "ar": "مظلات طرابلس الملكية", "en": "Tripoli Royal Shades" },
+    "tagline": { "ar": "حدائق • فلل • سيارات | فخامة بسيطة بسعر اقتصادي", "en": "Gardens • Villas • Cars | Simple luxury, budget price" },
+    "location": { "ar": "طرابلس، ليبيا — نخدم كل المناطق", "en": "Tripoli, Libya — All districts covered" },
+    "hours": { "ar": "السبت - الخميس: 9ص - 7م | الجمعة: 4م - 7م", "en": "Sat - Thu: 9AM - 7PM | Fri: 4PM - 7PM" },
+    "hoursShort": { "ar": "السبت - الخميس: 9ص - 7م", "en": "Sat - Thu: 9AM - 7PM" },
+    "topbarOffer": { "ar": "✦ معاينة ملكية مجانية داخل طرابلس", "en": "✦ FREE royal visit inside Tripoli" },
+    "phone": "091-234 5678",
+    "phoneIntl": "+218 91 234 5678",
+    "phoneLink": "+218912345678",
+    "whatsapp": "218912345678",
+    "currency": { "ar": "د.ل", "en": "LYD" },
+    "address": { "ar": "سوق الجمعة، طرابلس، ليبيا", "en": "Souq Jomaa, Tripoli, Libya" },
+    "addressShort": { "ar": "سوق الجمعة، طرابلس", "en": "Souq Jomaa, Tripoli" },
+    "footerDesc": { "ar": "تركيب مظلات حدائق وفلل وسيارات في طرابلس منذ 2013 — أنواع بسيطة ومتوسطة بلمسة فاخرة وأسعار اقتصادية.", "en": "Garden, villa & car shade installation in Tripoli since 2013 — simple & mid types with luxury touch at budget prices." },
+    "copyright": { "ar": "© 2024 مظلات طرابلس الملكية — جميع الحقوق محفوظة", "en": "© 2024 Tripoli Royal Shades — All rights reserved" },
+    "madeWith": { "ar": "صُنع بحب في طرابلس، ليبيا 🇱🇾", "en": "Made with love in Tripoli, Libya 🇱🇾" },
+    "defaultTheme": "royal",
+    "defaultLang": "ar"
+  },
+  "hero": {
+    "badge": { "ar": "متاحون الآن في طرابلس — تركيب خلال 48 ساعة بلمسة ملكية", "en": "Available now in Tripoli — Install within 48h with royal touch" },
+    "title1": { "ar": "مظلات حدائق وفلل ", "en": "Garden & Villa Shades " },
+    "titleGold": { "ar": "بفخامة بسيطة", "en": "with Simple Luxury" },
+    "subtitle": { "ar": "نوع بسيط ومتوسط فقط — بدون تكاليف الزجاج المبالغ فيها", "en": "Simple & mid-range only — No overpriced glass costs" },
+    "description": { "ar": "نركّب مظلات قماش شراعية، حديد مع قماش PVC كوري، وبرجولات خشبية أنيقة للجلسات الخارجية ومواقف السيارات. خامات تتحمّل شمس طرابلس ورطوبتها، تشطيب فاخر وضمان حقيقي — وكل شغلنا عملي واقتصادي.", "en": "Sail fabric, iron + Korean PVC & elegant wooden pergolas for patios & car parking. Built for Tripoli sun & humidity, luxury finish & real warranty — all practical & budget." },
+    "slides": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1920&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop"
+    ],
+    "sideImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    "sideCaption": { "ar": "فيلا مع حديقة — المكان المثالي للمظلة الأنيقة", "en": "Villa with garden — ideal for elegant shade" },
+    "sideTitle": { "ar": "مظلة قماش لجلسة خارجية + موقف سيارة", "en": "Fabric shade for patio + car park" },
+    "sideFinish": { "ar": "تشطيب ملكي — حديد مجلفن + قماش UV", "en": "Royal finish — galvanized + UV fabric" },
+    "warrantyTitle": { "ar": "ضمان سنتين مختوم", "en": "2-Year Stamped Warranty" },
+    "warrantySub": { "ar": "على الحديد والقماش", "en": "On frame & fabric" },
+    "localTitle": { "ar": "صناعة محلية — فنيون ليبيون", "en": "Local made — Libyan team" },
+    "localSub": { "ar": "نصلك لباب الحوش في طرابلس", "en": "We come to your home in Tripoli" },
+    "installBadge": { "ar": "تركيب في يوم واحد", "en": "1-day installation" },
+    "stats": [
+      { "kind": "counter", "value": 850, "suffix": "+", "label": { "ar": "مظلة تم تركيبها", "en": "Shades installed" } },
+      { "kind": "counter", "value": 12, "suffix": "", "label": { "ar": "سنة خبرة في طرابلس", "en": "Years in Tripoli" } },
+      { "kind": "text", "value": "4.8", "star": true, "label": { "ar": "تقييم العملاء", "en": "Customer rating" } }
+    ]
+  },
+  "sections": {
+    "services": {
+      "badge": { "ar": "✦ خدماتنا — بسيط ومتوسط بلمسة ملكية", "en": "✦ Our services — Simple & mid with royal touch" },
+      "title": { "ar": "شنو نركّبو لك في حوشك أو فيلتك؟", "en": "What can we install for you?" },
+      "subtitle": { "ar": "كل الصور مطابقة تماماً لنوع الشغل: حدائق، جلسات خارجية، ومواقف سيارات — خامات اقتصادية بتشطيب فاخر تعيش مع شمس ليبيا.", "en": "All photos exactly match the work: gardens, patios & car parks — budget materials with luxury finish for Libya's sun." }
+    },
+    "prices": {
+      "title": { "ar": "الأنواع والأسعار بشفافية ملكية", "en": "Types & prices with royal transparency" },
+      "subtitle": { "ar": "نشتغل فقط في البسيط والمتوسط — ولهذا أسعارنا في المتناول. الأنواع الفخمة المبالغ فيها لا نوفرها عمداً.", "en": "We only do simple & mid-range — that's why we're affordable. We intentionally skip overpriced luxury types." }
+    },
+    "calc": {
+      "title": { "ar": "حاسبة التكلفة الملكية", "en": "Royal cost calculator" },
+      "subtitle": { "ar": "حرّك المقاسات واختار النوع واللون — السعر تقريبي ويشمل التركيب داخل طرابلس.", "en": "Adjust sizes, type & color — estimate includes installation in Tripoli." }
+    },
+    "gallery": {
+      "title": { "ar": "شغلنا على الطبيعة — صور تطابق الواقع", "en": "Our real work — photos match reality" },
+      "subtitle": { "ar": "حدائق وفلل حقيقية + فريق التركيب — بدون صور فخمة مضللة. كل صورة مراجعة وتطابق المحتوى.", "en": "Real gardens & villas + install team — no misleading renders. Every photo verified to match content." }
+    },
+    "steps": {
+      "title": { "ar": "كيف نخدمك؟ 4 خطوات ملكية بس", "en": "How we work? Just 4 royal steps" }
+    },
+    "reviews": {
+      "title": { "ar": "شنو قالو جيرانك في طرابلس؟", "en": "What your Tripoli neighbours say?" }
+    },
+    "faq": {
+      "title": { "ar": "أسئلة تتكرر من أهل طرابلس", "en": "Questions from Tripoli people" }
+    },
+    "why": {
+      "title": { "ar": "ليش العائلات في طرابلس يختارونا؟", "en": "Why Tripoli families choose us?" },
+      "subtitle": { "ar": "لأننا واضحين: جودة كويسة بلمسة فاخرة وسعر معقول، وما نغشك بصور مستوردة.", "en": "Because we're clear: good quality with luxury touch at fair price, no fake photos." }
+    },
+    "parallax": {
+      "bg": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop",
+      "title": { "ar": "فخامة الفيلا تبدأ من الجلسة الخارجية", "en": "Villa luxury starts from the outdoor patio" },
+      "desc": { "ar": "صورة خلفية عالية الجودة لفيلا ليلية — نفس مستوى التشطيب الذي نقدمه: حديد نظيف، قماش مشدود، وإضاءة دافئة للسهرات العائلية.", "en": "High-quality night villa background — same finish level we deliver: clean steel, tight fabric & warm lights for family nights." },
+      "stats": [
+        { "value": "90%", "gold": false, "label": { "ar": "تظليل وحماية UV", "en": "UV shading" } },
+        { "value": "48h", "gold": true, "label": { "ar": "سرعة التركيب", "en": "Fast install" } },
+        { "value": "2yr", "gold": false, "label": { "ar": "ضمان حقيقي", "en": "Real warranty" } },
+        { "value": "-20%", "gold": true, "label": { "ar": "أرخص بدون وسطاء", "en": "Cheaper, no middlemen" } }
+      ]
+    },
+    "promo": {
+      "bg": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+      "badge": { "ar": "عرض هذا الشهر — خصم 10% + إضاءة هدية", "en": "This month — 10% off + free lights" },
+      "title": { "ar": "حوّل حوشك لجلسة ملكية قبل الصيف", "en": "Turn your yard into a royal patio before summer" },
+      "subtitle": { "ar": "احجز معاينتك المجانية اليوم — الأماكن محدودة في طرابلس.", "en": "Book your free visit today — limited slots in Tripoli." }
+    }
+  },
+  "features": [
+    { "icon": "fa-ruler-combined", "color": "brand", "text": { "ar": "معاينة وقياس مجاني داخل طرابلس", "en": "Free visit & measurement in Tripoli" } },
+    { "icon": "fa-sack-dollar", "color": "green", "text": { "ar": "أسعار بالمتر واضحة بالدينار", "en": "Clear per-meter prices in LYD" } },
+    { "icon": "fa-ban", "color": "gold", "text": { "ar": "لا نبيع الأنواع الغالية المبالغ فيها", "en": "No overpriced luxury types" } },
+    { "icon": "fa-screwdriver-wrench", "color": "blue", "text": { "ar": "صيانة وفك وتركيب بعد البيع", "en": "After-sale maintenance & service" } }
+  ],
+  "categories": [
+    { "id": "garden", "label": { "ar": "حدائق", "en": "Gardens" } },
+    { "id": "villa", "label": { "ar": "فلل", "en": "Villas" } },
+    { "id": "car", "label": { "ar": "سيارات + تركيب", "en": "Cars + Work" } }
+  ],
+  "categoriesAll": { "ar": "الكل", "en": "All" },
+  "products": [
+    {
+      "id": "sail",
+      "category": "garden",
+      "visible": true,
+      "featured": true,
+      "priceStyle": "green",
+      "name": { "ar": "مظلة شراعية قماش للحديقة", "en": "Garden sail fabric shade" },
+      "calcName": { "ar": "شراعي قماش", "en": "Sail cloth" },
+      "calcSub": { "ar": "اقتصادي للحدائق", "en": "Budget for gardens" },
+      "option": { "ar": "شراعي قماش (اقتصادي)", "en": "Sail cloth (economy)" },
+      "desc": { "ar": "قماش عازل UV بوزن 280غ، أعمدة حديد مدهونة بدهان فرن. مثالية فوق الجلسة أو ألعاب الأطفال.", "en": "UV fabric 280g, oven-painted iron poles. Perfect over seating or kids area." },
+      "price": 95,
+      "unit": { "ar": "د.ل / م²", "en": "LYD / m²" },
+      "badge": { "ar": "الأكثر طلباً للحدائق", "en": "Top for gardens" },
+      "badgeStyle": "green",
+      "features": [
+        { "ar": "تظليل 90% وحماية من الشمس", "en": "90% shading & sun protection" },
+        { "ar": "فك وتركيب سهل للتنظيف", "en": "Easy removal for cleaning" }
+      ],
+      "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=800&auto=format&fit=crop",
+      "photoTag": { "icon": "fa-leaf", "color": "text-green-400", "text": "Garden Shade" },
+      "priceTag": { "ar": "النوع الاقتصادي", "en": "ECONOMY TYPE" },
+      "priceDesc": { "ar": "للحوش والجنان الصغير والمتوسط", "en": "For small & medium yards" },
+      "priceBadge": { "ar": "", "en": "" },
+      "pricePoints": [
+        { "ar": "أعمدة حديد + قماش 280غ", "en": "Iron poles + 280g fabric" },
+        { "ar": "6 ألوان قماش تختار منها", "en": "6 fabric colors" },
+        { "ar": "تركيب في نفس اليوم", "en": "Same-day install" },
+        { "ar": "ضمان سنة", "en": "1-year warranty" }
+      ]
+    },
+    {
+      "id": "pvc",
+      "category": "villa",
+      "visible": true,
+      "featured": true,
+      "priceStyle": "gold",
+      "name": { "ar": "حديد + قماش PVC للفيلا", "en": "Iron + PVC fabric for villas" },
+      "calcName": { "ar": "حديد + PVC", "en": "Iron+PVC" },
+      "calcSub": { "ar": "متوسط للفلل", "en": "Mid for villas" },
+      "option": { "ar": "حديد + PVC كوري (متوسط)", "en": "Iron + Korean PVC (mid)" },
+      "desc": { "ar": "هيكل حديد 40×40 مجلفن + قماش PVC كوري ضد الماء. لمدخل الفيلا والجلسة الخارجية.", "en": "Galvanized 40×40 frame + Korean PVC waterproof. For entrance & patio." },
+      "price": 195,
+      "unit": { "ar": "د.ل / م²", "en": "LYD / m²" },
+      "badge": { "ar": "الأفضل للفلل", "en": "Best for villas" },
+      "badgeStyle": "dark",
+      "features": [
+        { "ar": "ضد المطر والشمس معاً", "en": "Rain & sun proof" },
+        { "ar": "دهان فرن مقاوم للصدأ", "en": "Anti-rust oven paint" }
+      ],
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
+      "photoTag": { "icon": "fa-house", "color": "text-amber-300", "text": "Villa patio" },
+      "priceTag": { "ar": "النوع المتوسط — فخامة عملية", "en": "MID-RANGE — Practical luxury" },
+      "priceDesc": { "ar": "للفلل ومداخل البيوت والسيارات", "en": "For villas, entrances & cars" },
+      "priceBadge": { "ar": "الأكثر طلباً في طرابلس ⭐", "en": "Most popular in Tripoli ⭐" },
+      "pricePoints": [
+        { "ar": "هيكل مجلفن ضد الصدأ", "en": "Galvanized anti-rust frame" },
+        { "ar": "قماش ضد الماء والشمس", "en": "Waterproof & sunproof" },
+        { "ar": "دهان فرن + قواعد خرسانة", "en": "Oven paint + concrete bases" },
+        { "ar": "ضمان سنتين حقيقي", "en": "Real 2-year warranty" }
+      ]
+    },
+    {
+      "id": "car",
+      "category": "car",
+      "visible": true,
+      "featured": false,
+      "priceStyle": "green",
+      "name": { "ar": "مظلة سيارات بسيطة", "en": "Simple car shade" },
+      "calcName": { "ar": "مظلة سيارة", "en": "Car shade" },
+      "calcSub": { "ar": "موقف 1-2 سيارات", "en": "1-2 cars" },
+      "option": { "ar": "مظلة سيارات", "en": "Car shade" },
+      "desc": { "ar": "للسيارة أو الزوز سيارات قدام الحوش. تحمي من الشمس وتحافظ على برودة السيارة.", "en": "For 1-2 cars in front of house. Keeps car cool & protected." },
+      "price": 165,
+      "unit": { "ar": "د.ل / م²", "en": "LYD / m²" },
+      "badge": { "ar": "حماية السيارة", "en": "Car protection" },
+      "badgeStyle": "brand",
+      "features": [
+        { "ar": "مقاس 3×5 أو 5×5 جاهز", "en": "Ready sizes 3×5 or 5×5" },
+        { "ar": "قواعد خرسانية ثابتة", "en": "Solid concrete bases" }
+      ],
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=800&auto=format&fit=crop",
+      "photoTag": { "icon": "fa-car", "color": "text-sky-300", "text": "Car park" },
+      "priceTag": { "ar": "موقف سيارات", "en": "CAR PARK" },
+      "priceDesc": { "ar": "للسيارة أو السيارتين قدام الحوش", "en": "For 1-2 cars in front of the house" },
+      "priceBadge": { "ar": "", "en": "" },
+      "pricePoints": [
+        { "ar": "هيكل مجلفن + قماش عازل", "en": "Galvanized frame + insulating fabric" },
+        { "ar": "مقاسات جاهزة 3×5 و 5×5", "en": "Ready sizes 3×5 & 5×5" },
+        { "ar": "قواعد خرسانية ثابتة", "en": "Solid concrete bases" },
+        { "ar": "تركيب في يوم واحد", "en": "One-day installation" }
+      ]
+    },
+    {
+      "id": "wood",
+      "category": "garden",
+      "visible": true,
+      "featured": false,
+      "priceStyle": "gold",
+      "name": { "ar": "برجولة خشبية أنيقة", "en": "Elegant wooden pergola" },
+      "calcName": { "ar": "برجولة خشبية", "en": "Wood pergola" },
+      "calcSub": { "ar": "شكل جميل متوسط", "en": "Nice mid look" },
+      "option": { "ar": "برجولة خشبية", "en": "Wooden pergola" },
+      "desc": { "ar": "خشب سويدي معالج + غطاء قماش فاخر. ظل وجمالية للجنان بدون تكلفة عالية.", "en": "Treated Swedish wood + luxury fabric cover. Beauty & shade, low cost." },
+      "price": 240,
+      "unit": { "ar": "د.ل / م²", "en": "LYD / m²" },
+      "badge": { "ar": "شكل ملكي واقتصادي", "en": "Royal & budget" },
+      "badgeStyle": "brown",
+      "features": [
+        { "ar": "دهان عازل ضد الرطوبة", "en": "Moisture-proof paint" },
+        { "ar": "إمكانية ستائر جانبية", "en": "Optional side curtains" }
+      ],
+      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop",
+      "photoTag": { "icon": "fa-tree", "color": "text-green-300", "text": "Pergola patio" },
+      "priceTag": { "ar": "جلسة خارجية راقية", "en": "ELEGANT PATIO" },
+      "priceDesc": { "ar": "للجنان والجلسات العائلية", "en": "For gardens & family patios" },
+      "priceBadge": { "ar": "", "en": "" },
+      "pricePoints": [
+        { "ar": "خشب سويدي معالج", "en": "Treated Swedish wood" },
+        { "ar": "غطاء قماش فاخر", "en": "Luxury fabric cover" },
+        { "ar": "دهان عازل ضد الرطوبة", "en": "Moisture-proof paint" },
+        { "ar": "إمكانية ستائر جانبية", "en": "Optional side curtains" }
+      ]
+    }
+  ],
+  "priceNote": {
+    "tag": { "ar": "لا نوفر — للتوضيح فقط", "en": "WE DON'T OFFER — For clarity" },
+    "title": { "ar": "زجاج وألمنيوم متحرك", "en": "Glass & motorized louver" },
+    "price": "600+",
+    "unit": { "ar": "د.ل/م²", "en": "LYD/m²" },
+    "desc": { "ar": "أنواع حديثة جداً ومكلفة لا ننصح بها لأجواء طرابلس وميزانية العائلة.", "en": "Very modern costly types we don't recommend for Tripoli & family budgets." },
+    "points": [
+      { "ar": "تحتاج صيانة غالية وقطع مستوردة", "en": "Needs costly imported parts" },
+      { "ar": "تسخن في الصيف ولا تناسب الغبرة", "en": "Overheats & not dust-friendly" }
+    ],
+    "advice": { "ar": "نصيحتنا: وفّر فلوسك وخود العملي ✅", "en": "Our advice: save money, go practical ✅" }
+  },
+  "calculator": {
+    "curtainPrice": 25,
+    "curtainName": { "ar": "ستارة جانبية", "en": "Side curtain" },
+    "curtainUnit": { "ar": "د.ل/متر طولي", "en": "LYD/m" },
+    "lightPrice": 180,
+    "lightName": { "ar": "إضاءة ليد ملكية للجلسة", "en": "Royal LED lights" },
+    "includesNote": { "ar": "✅ السعر يشمل: الحديد + القماش + الدهان + التركيب + النقل داخل طرابلس. المعاينة النهائية مجانية لتثبيت السعر.", "en": "✅ Includes: frame + fabric + paint + install + transport in Tripoli. Final free visit confirms price." }
+  },
+  "gallery": [
+    {
+      "id": "g1",
+      "category": "garden",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "مظلة شراعية لجنان عائلي — عين زارة", "en": "Sail shade for family garden — Ain Zara" },
+      "subtitle": { "ar": "قماش بيج 4×5 — اقتصادي", "en": "Beige fabric 4×5 — budget" }
+    },
+    {
+      "id": "g2",
+      "category": "villa",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "تغطية جلسة فيلا — جنزور", "en": "Villa patio cover — Janzour" },
+      "subtitle": { "ar": "حديد + PVC ضد المطر", "en": "Iron + waterproof PVC" }
+    },
+    {
+      "id": "g3",
+      "category": "villa",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "جلسة خارجية ببرجولة — السراج", "en": "Pergola patio — Seraj" },
+      "subtitle": { "ar": "خشب + قماش — متوسط", "en": "Wood + fabric — mid" }
+    },
+    {
+      "id": "g4",
+      "category": "car",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "مظلة سيارتين قدام الحوش — تاجوراء", "en": "2-car shade — Tajoura" },
+      "subtitle": { "ar": "5×5 حديد مجلفن", "en": "5×5 galvanized" }
+    },
+    {
+      "id": "g5",
+      "category": "garden",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "تظليل ركن الزرع — الفرناج", "en": "Garden corner shading — Fornaj" },
+      "subtitle": { "ar": "قماش عازل UV", "en": "UV fabric" }
+    },
+    {
+      "id": "g6",
+      "category": "car",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-helmet-safety", "text": "WORKSHOP", "gold": true },
+      "title": { "ar": "فريقنا أثناء لحام الهيكل", "en": "Our team welding frame" },
+      "subtitle": { "ar": "شغل حديد مضمون", "en": "Guaranteed steel work" }
+    },
+    {
+      "id": "g7",
+      "category": "garden",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "جلسة حديقة منسقة — عين زارة", "en": "Landscaped garden patio — Ain Zara" },
+      "subtitle": { "ar": "تنسيق + تظليل اقتصادي", "en": "Budget shade + design" }
+    },
+    {
+      "id": "g8",
+      "category": "villa",
+      "visible": true,
+      "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=600&auto=format&fit=crop",
+      "badge": { "icon": "fa-circle-check", "text": "MATCHED", "gold": false },
+      "title": { "ar": "مدخل فيلا مع مظلة — حي الأندلس", "en": "Villa entrance shade — Hay Andalus" },
+      "subtitle": { "ar": "PVC كوري 3×4", "en": "Korean PVC 3×4" }
+    }
+  ],
+  "steps": [
+    { "icon2": "fa-phone", "accent": "ink", "sub": "green", "title": { "ar": "اتصال أو واتساب", "en": "Call or WhatsApp" }, "desc": { "ar": "ابعت صور الحوش والمقاس التقريبي على واتساب.", "en": "Send yard photos & approx size on WhatsApp." } },
+    { "icon2": "fa-ruler", "accent": "brand", "sub": "ink", "title": { "ar": "معاينة مجانية", "en": "Free visit" }, "desc": { "ar": "نجوك لعندك في طرابلس، نقيسو ونوروّك عينات القماش.", "en": "We visit you in Tripoli, measure & show samples." } },
+    { "icon2": "fa-hammer", "accent": "gold", "sub": "brand", "title": { "ar": "تصنيع وتركيب", "en": "Build & install" }, "desc": { "ar": "نصنع الهيكل في الورشة ونركب في يوم واحد غالباً.", "en": "We build in workshop & install mostly in one day." } },
+    { "icon2": "fa-shield-halved", "accent": "green", "sub": "ink", "title": { "ar": "ضمان وصيانة", "en": "Warranty & care" }, "desc": { "ar": "تستلم ورقة ضمان + صيانة مجانية أول 6 شهور.", "en": "Warranty paper + free 6-month maintenance." } }
+  ],
+  "why": {
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop",
+    "imageTag": { "ar": "صورة مطابقة: ورشتنا والحدادة", "en": "Matching: our workshop & steel" },
+    "thumb": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=200&auto=format&fit=crop",
+    "overlayTitle": { "ar": "ورشة خاصة في سوق الجمعة — شغلنا بيدينا", "en": "Own workshop in Souq Jomaa — handmade" },
+    "overlayDesc": { "ar": "بدون وسطاء — لهذا سعرنا أرخص بـ 20%", "en": "No middlemen — 20% cheaper" },
+    "bgImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",
+    "points": [
+      { "tick": "gold", "title": { "ar": "خامات مجرّبة في شمس طرابلس", "en": "Tested in Tripoli sun" }, "desc": { "ar": "قماش لا يتمزق مع القبلي، وحديد مدهون ضد الرطوبة والملوحة.", "en": "Fabric resists ghibli wind, painted iron vs humidity & salt." } },
+      { "tick": "green", "title": { "ar": "دفع على مراحل — بدون مقدم كبير", "en": "Staged payment — small deposit" }, "desc": { "ar": "30% فقط للبدء، والباقي بعد التركيب والرضا. كاش أو تحويل.", "en": "Only 30% to start, rest after install. Cash or transfer." } },
+      { "tick": "gold2", "title": { "ar": "نخدم كل طرابلس الكبرى", "en": "All Greater Tripoli" }, "desc": { "ar": "تاجوراء، عين زارة، جنزور، السراج، حي الأندلس، طريق المطار، سوق الجمعة، الفرناج، عرادة، الدريبي.", "en": "Tajoura, Ain Zara, Janzour, Seraj, Hay Andalus, Airport Rd, Souq Jomaa, Fornaj, Arada, Drebi." } }
+    ]
+  },
+  "reviews": {
+    "average": "4.8",
+    "count": "210",
+    "label": { "ar": "تقييم", "en": "reviews" },
+    "items": [
+      {
+        "name": "محمد الفيتوري — عين زارة",
+        "avatar": "https://i.pravatar.cc/100?img=12",
+        "rating": 5,
+        "text": { "ar": "\"درت مظلة PVC 4×5 لجنان الفيلا في عين زارة. جوّني ثاني يوم قاسو، وثالث يوم ركبو. السعر زي ما حسبوه بالضبط، والخدمة نظيفة والتشطيب راقي. ننصح بيهم.\"", "en": "\"I ordered a 4×5 PVC shade for our villa garden in Ain Zara. They came to measure the next day and installed on the third. The price was exactly as quoted, clean work and elegant finish. I recommend them.\"" },
+        "verified": { "ar": "تم التحقق — مظلة حديقة", "en": "Verified — Garden shade" }
+      },
+      {
+        "name": "Family Ben Amer — Janzour",
+        "avatar": "https://i.pravatar.cc/100?img=47",
+        "rating": 5,
+        "text": { "ar": "\"كنت نحتاج مظلة سيارات بسيطة لزوز سيارات في جنزور. دارو هيكل مجلفن في يوم واحد، والسعر كان معقول. ناس صادقة وتشطيب أنيق بدون ما يدفوك للأنواع الغالية.\"", "en": "\"I needed a simple car shade for two cars in Janzour. They did galvanized frame in one day, price was fair (around 4000 LYD). Very honest, elegant finish, no push for expensive types.\"" },
+        "verified": { "ar": "تم التحقق — مظلة سيارات 5×5", "en": "Verified — Car shade 5×5" }
+      },
+      {
+        "name": "أم أحمد — السراج",
+        "avatar": "https://i.pravatar.cc/100?img=32",
+        "rating": 5,
+        "text": { "ar": "\"برجولة خشبية أنيقة للجلسة في السراج. شكلها في الصور زي الطبيعة بالضبط. خذيت معاها ستارة جانبية والإضاءة الملكية، والحوش تغيّر كله. شكراً.\"", "en": "\"An elegant wooden pergola for our patio in Seraj. It looks exactly like the photos. I added a side curtain and the royal lights — the whole yard changed. Thank you.\"" },
+        "verified": { "ar": "تم التحقق — برجولة خشبية", "en": "Verified — Wooden pergola" }
+      }
+    ]
+  },
+  "faqs": [
+    { "q": { "ar": "كم تاخذ المظلة وقت للتركيب؟", "en": "How long does installation take?" }, "a": { "ar": "الأنواع البسيطة (شراعي وقماش) تتركب في نفس اليوم. الحديد + PVC والبرجولة الخشبية تاخذ 2-3 أيام شامل التصنيع في الورشة والتركيب.", "en": "Simple types install same day. Iron+PVC & wood take 2-3 days incl. workshop build & install." } },
+    { "q": { "ar": "هل القماش يتحمّل القبلي والمطر؟", "en": "Does fabric survive wind & rain?" }, "a": { "ar": "نعم. نستخدم قماش 280-320غ مع شدّ احترافي يخلي الريح تفوت بدون ما تقطع. نوع PVC الكوري ضد الماء 100% ومجرب في شتاء طرابلس.", "en": "Yes. 280-320g fabric with pro tension lets wind pass. Korean PVC is 100% waterproof, tested in Tripoli winter." } },
+    { "q": { "ar": "ليش ما تخدموش المظلات الزجاجية الحديثة؟", "en": "Why no modern glass shades?" }, "a": { "ar": "لأنها غالية (600+ د.ل/م²)، تسخن في صيف ليبيا، وقطع غيارها غير متوفرة وتحتاج فني أجنبي للصيانة. نفضل نعطيك حل عملي يعيش ورخيص الصيانة بلمسة فاخرة.", "en": "Because they're pricey (600+ LYD/m²), overheat in Libya summer, spares unavailable. We prefer practical luxury that lasts." } },
+    { "q": { "ar": "كيف الدفع؟ وهل فيه ضمان مكتوب؟", "en": "Payment & written warranty?" }, "a": { "ar": "30% عربون للبدء، والباقي بعد ما تستلم الشغل ويعجبك. تستلم ورقة ضمان مختومة: سنة للشراعي وسنتين للحديد وPVC. الدفع كاش أو تحويل مصرفي.", "en": "30% deposit, rest after approval. Stamped warranty: 1yr sail, 2yrs iron/PVC. Cash or bank transfer." } },
+    { "q": { "ar": "هل المعاينة فعلاً مجانية؟", "en": "Is the visit really free?" }, "a": { "ar": "نعم مجانية 100% داخل طرابلس الكبرى (تاجوراء إلى جنزور). خارج طرابلس (الزاوية، زليتن، مصراتة) نحسبو 50 د.ل تنخصم لو اتفقنا.", "en": "Yes 100% free in Greater Tripoli (Tajoura to Janzour). Outside (Zawiya, Zliten, Misrata) 50 LYD deducted if we agree." } }
+  ],
+  "districts": {
+    "ar": ["تاجوراء", "عين زارة", "جنزور", "السراج", "حي الأندلس", "طريق المطار", "سوق الجمعة", "الفرناج", "عرادة", "الدريبي", "الزوية الصغيرة", "قصر بن غشير"],
+    "en": ["Tajoura", "Ain Zara", "Janzour", "Seraj", "Hay Andalus", "Airport Road", "Souq Jomaa", "Fornaj", "Arada", "Drebi", "Al-Zawiya", "Qasr Ben Ghashir"],
+    "other": { "ar": "أخرى في طرابلس", "en": "Other Tripoli district" }
+  },
+  "contact": {
+    "title": { "ar": "احجز معاينتك المجانية", "en": "Book your free visit" },
+    "subtitle": { "ar": "ابعت التفاصيل ونتواصل معاك خلال ساعات الشغل — أو اتصل بينا مباشرة.", "en": "Send details & we reply within working hours — or call directly." },
+    "callLabel": { "ar": "اتصل بينا", "en": "Call us" },
+    "whatsappLabel": { "ar": "واتساب مباشر", "en": "Direct WhatsApp" },
+    "whatsappSub": { "ar": "نرد بسرعة على الصور والمقاسات", "en": "Fast reply to photos & sizes" },
+    "workshopLabel": { "ar": "ورشتنا", "en": "Our workshop" },
+    "hoursLabel": { "ar": "ساعات الشغل", "en": "Working hours" },
+    "districtsTitle": { "ar": "نخدم كل أحياء طرابلس:", "en": "We cover all Tripoli districts:" },
+    "formTitle": { "ar": "نموذج الحجز السريع", "en": "Quick booking form" },
+    "nameLabel": { "ar": "الاسم الكريم", "en": "Your name" },
+    "namePh": { "ar": "مثال: أحمد العربي", "en": "e.g. Ahmed Alarabi" },
+    "phoneLabel": { "ar": "رقم الهاتف", "en": "Phone number" },
+    "districtLabel": { "ar": "الحي / المنطقة", "en": "District / area" },
+    "typeLabel": { "ar": "نوع المظلة", "en": "Shade type" },
+    "msgLabel": { "ar": "تفاصيل إضافية (المقاس التقريبي، صور الحوش...)", "en": "Extra details (approx size, yard photos...)" },
+    "msgPh": { "ar": "مثال: جنان 6×4 م، نبي مظلة فوق الجلسة...", "en": "e.g. Yard 6×4 m, shade over the patio..." },
+    "submitLabel": { "ar": "أرسل الطلب عبر واتساب", "en": "Send request via WhatsApp" },
+    "noteText": { "ar": "✅ المعاينة والقياس مجاني 100% داخل طرابلس — بدون أي التزام", "en": "✅ Free visit & measurement 100% inside Tripoli — no commitment" },
+    "consultOption": { "ar": "مشاورة قبل الاختيار", "en": "Consultation first" }
+  }
+}
